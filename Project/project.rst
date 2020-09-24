@@ -35,8 +35,8 @@ General Information
 |                          | |  - is at least 3 characters long                                                           |                    |
 |                          | |  - is upper case                                                                           |                    |
 |                          | |  - contains only alpha-numeric characters and no symbols such as -_*                       |                    |
-|                          | Separate multiple prefixes with a comma. Locus tags can be added but existing locus tags     |                    |
-|                          | cannot be removed or edited.                                                                 |                    |
+|                          | | Separate multiple prefixes with a comma. Locus tags can be added but existing locus tags   |                    |
+|                          |   cannot be removed or edited.                                                               |                    |
 +--------------------------+----------------------------------------------------------------------------------------------+--------------------+
 | **External links**       | The web sites that are related to this project.                                              |                    |
 +--------------------------+----------------------------------------------------------------------------------------------+--------------------+
