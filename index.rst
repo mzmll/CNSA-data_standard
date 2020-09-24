@@ -14,9 +14,9 @@ This documentation is about data standards for CNSA.
 
    Project/project
 
-   .. toctree::
-      :caption: Sample
-      :maxdepth: 1
+.. toctree::
+   :caption: Sample
+   :maxdepth: 1
 
    Sample/sample
 
