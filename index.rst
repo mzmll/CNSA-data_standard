@@ -18,7 +18,7 @@ This documentation is about data standards for CNSA.
       :caption: Sample
       :maxdepth: 1
 
-  Sample/sample
+   Sample/sample
 
 
 
