@@ -6,15 +6,20 @@
 Welcome to CNSA's documentation!
 ================================
 
+This documentation is about data standards for CNSA.
+
 .. toctree::
-   :maxdepth: 2
-   :glob:
-   
+   :caption: Project
+   :maxdepth: 1
+
    Project/project
 
+   .. toctree::
+      :caption: Sample
+      :maxdepth: 1
 
+  Sample/sample
 
-#   :caption: Contents:
 
 
 
