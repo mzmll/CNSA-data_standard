@@ -10,10 +10,11 @@ geography
 ~~~~~~~~~
 
 **profile position(profile_position)**
-Definition: cross-sectional position in the hillslope where sample was collected. sample area position in relation to surrounding areas
-Field Format: text choice
-Expected value: enumeration
-Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
+
+｜ Definition: cross-sectional position in the hillslope where sample was collected. sample area position in relation to surrounding areas
+｜ Field Format: text choice
+｜ Expected value: enumeration
+｜ Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
 
 
 **slope aspect(slope_aspect)**
@@ -25,6 +26,7 @@ Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
 | Preferred unit: degree
 
 **slope gradient(slope_gradient)**
+
 | Definition: commonly called 'slope'. The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer
 | Field Format: restricted text
 | Expected value: measurement value
