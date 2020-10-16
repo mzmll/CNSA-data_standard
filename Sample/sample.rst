@@ -81,57 +81,54 @@ non-sample terms
 * Value syntax: {integer} bp
 * Example: 300000 bp
 
-****
+**reference for biomaterial(ref_biomaterial)**
 
-* Definition:
-* Field Format:
-* Expected value:
-* Value syntax:
-* Preferred unit:
+* Definition: primary publication if isolated before genome publication; otherwise, primary genome report
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
 
+**sample volume or weight for DNA extraction(samp_vol_we_dna_ext)**
 
+* Definition: volume (mL) or weight (g) of sample processed for DNA extraction
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: millliter, gram, milligram
 
-****
+**pooling of DNA extracts(pool_dna_extracts)**
 
-* Definition:
-* Field Format:
-* Expected value:
-* Value syntax:
-* Preferred unit:
+* Definition: were multiple DNA extractions mixed? how many?
+* Field Format: free text
+* Expected value: pooling status;measurement value
+* Value syntax: {boolean};{float} {unit}
+* Preferred unit: gram, milliliter, microliter
 
+**study completion status(study_complt_stat)**
 
+* Definition: specification of study completion status, if no the reason should be specified
+* Field Format: text choice
+* Expected value: study completion status
+* Value syntax: {boolean};[adverse event\|non-compliance\|lost to follow up\|other-specify]
+* Example:
+  - No - adverse event
+  - No - lost to follow up
+  - No - non-compliance
+  - No - other
+  - Yes
 
-****
+**investigation type(investigation_type)**
 
-* Definition:
-* Field Format:
-* Expected value:
-* Value syntax:
-* Preferred unit:
-
-
-
-****
-
-* Definition:
-* Field Format:
-* Expected value:
-* Value syntax:
-* Preferred unit:
-
-
-
-****
-
-* Definition:
-* Field Format:
-* Expected value:
-* Value syntax:
-* Preferred unit:
+* Definition: Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardized by Genomic Standards Consortium.
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'bacteria_archaea', 'eukaryote', 'metagenome', 'metagenome-assembled genome', 'metatranscriptome', 'mimarks-specimen', 'mimarks-survey', 'organelle', 'plasmid', 'single amplified genome', 'uncultivated virus genome', 'virus']
 
 
+collection event information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-****
+**collection date(collection_date)**
 
 * Definition:
 * Field Format:
