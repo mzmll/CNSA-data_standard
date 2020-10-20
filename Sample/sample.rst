@@ -637,6 +637,212 @@ sample collection
 host disorder
 ~~~~~~~~~~~~~
 
+**blood disorder** : ``blood_blood_disord``
+
+* Definition: history of blood disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**dermatology disorder** : ``dermatology_disord``
+
+* Definition: history of dermatology disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**gastrointestinal tract disorder** : ``gastrointest_disord``
+
+* Definition: history of gastrointestinal tract disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**gynecological disorder** : ``gynecologic_disord``
+
+* Definition: history of gynecological disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: gynecological disorder
+* Value syntax: {text}
+
+**host disease** : ``host_disease``
+
+* Definition: list of diseases with which the host has been diagnosed; can include multiple diagnoses. the value of the field depends on host; for humans the terms should be chosen from DO (Disease Ontology) at http://www.disease-ontology.org, other hosts are free text
+* Field Format: free text
+* Expected value: disease name or DO
+* Value syntax: {term}
+
+**host HIV status** : ``host_hiv_stat``
+
+* Definition: HIV status of subject, if yes HAART initiation status should also be indicated as [YES or NO]
+* Field Format: text choice
+* Expected value: HIV status;HAART initiation status
+* Value syntax: {boolean};{boolean}
+
+**kidney disorder** : ``kidney_disord``
+
+* Definition: history of kidney disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**liver disorder** : ``liver_disord``
+
+* Definition: history of liver disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**nose/mouth/teeth/throat disorder** : ``nose_mouth_teeth_throat_disord``
+
+* Definition: history of nose/mouth/teeth/throat disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**nose-throat disorder** : ``nose_throat_disord``
+
+* Definition: history of nose-throat disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**pulmonary disorder** : ``pulmonary_disord``
+
+* Definition: history of pulmonary disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**urogenital disorder** : ``urogenit_disord``
+
+* Definition: history of urogenital disorders, can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**urogenital tract disorder** : ``urogenit_tract_disor``
+
+* Definition: history of urogenitaltract disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+unusual properties
+~~~~~~~~~~~~~~~~~~
+
+**aluminium saturation** : ``al_sat``
+
+* Definition: aluminum saturation (esp. for tropical soils)
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: percentage
+
+**aluminium saturation method** : ``al_sat_meth``
+
+* Definition: reference or method used in determining Al saturation
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**extreme salinity** : ``extreme_salinity``
+
+* Definition: measured salinity
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: practical salinity unit
+
+**heavy metals** : ``heavy_metals``
+
+* Definition: heavy metals present and concentrations of any drug used by subject and the frequency of usage; can include multiple heavy metals and concentrations
+* Field Format: free text
+* Expected value: heavy metal name;measurement value
+* Value syntax: {text};{float} {unit}
+* Preferred unit: microgram per gram
+
+**heavy metals method** : ``heavy_metals_meth``
+
+* Definition: reference or method used in determining heavy metals
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**salinity method** : ``salinity_meth``
+
+* Definition: reference or method used in determining salinity
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+bioreactor
+~~~~~~~~~~
+
+**biochemical oxygen demand** : ``biochem_oxygen_dem``
+
+* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milligram per liter
+
+**chemical oxygen demand** : ``chem_oxygen_dem``
+
+* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milligram per liter
+
+**pre-treatment** : ``pre_treatment``
+
+* Definition: the process of pre-treatment removes materials that can be easily collected from the raw wastewater
+* Field Format: free text
+* Expected value: pre-treatment type
+* Value syntax: {text}
+
+**primary treatment** : ``primary_treatment``
+
+* Definition: the process to produce both a generally homogeneous liquid capable of being treated biologically and a sludge that can be separately treated or processed
+* Field Format: free text
+* Expected value: primary treatment type
+* Value syntax: {text}
+
+**reactor type** : ``reactor_type``
+
+* Definition: anaerobic digesters can be designed and engineered to operate using a number of different process configurations, as batch or continuous, mesophilic, high solid or low solid, and single stage or multistage
+* Field Format: free text
+* Expected value: reactor type name
+* Value syntax: {text}
+
+**secondary treatment** : ``secondary_treatment``
+
+* Definition: the process for substantially degrading the biological content of the sewage
+* Field Format: free text
+* Expected value: secondary treatment type
+* Value syntax: {text}
+
+**sludge retention time** : ``sludge_retent_time``
+
+* Definition: the time activated sludge remains in reactor
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: days,hours,minutes,weeks
+
+**tertiary treatment** : ``tertiary_treatment``
+
+* Definition: the process providing a final treatment stage to raise the effluent quality before it is discharged to the receiving environment
+* Field Format: free text
+* Expected value: tertiary treatment type
+* Value syntax: {text}
+
+**treatment** : ``treatment``
+
+host description
+~~~~~~~~~~~~~~~~
+
 **** : ````
 
 * Definition:
@@ -652,6 +858,80 @@ host disorder
 * Expected value:
 * Value syntax:
 * Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
+
+**** : ````
+
+* Definition:
+* Field Format:
+* Expected value:
+* Value syntax:
+* Preferred unit:
+
 
 **** : ````
 
