@@ -145,7 +145,7 @@ collection event information
 * Value syntax: {float} m
 * Preferred unit: m
 
-**elevation* : ``elev``
+**elevation** : ``elev``
 
 * Definition: the elevation of the sampling site as measured by the vertical distance from mean sea level
 * Field Format: restricted text
@@ -155,8 +155,9 @@ collection event information
 
 **environment (biome)** : ``env_biome``
 
-* Definition: The environmental biome level are the major classes of ecologically similar communities of plants, animals, and other organisms. Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v1.53) terms listed under environmental biome can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
-Add terms that identify the major environment type(s) where your sample was collected. Recommend subclasses of biome [ENVO:00000428]. Multiple terms can be separated by one or more pipes e.g.: mangrove biome [ENVO:01000181]|estuarine biome [ENVO:01000020]
+* Definition:
+    | The environmental biome level are the major classes of ecologically similar communities of plants, animals, and other organisms. Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v1.53) terms listed under environmental biome can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
+    | Add terms that identify the major environment type(s) where your sample was collected. Recommend subclasses of biome [ENVO:00000428]. Multiple terms can be separated by one or more pipes e.g.: mangrove biome [ENVO:01000181]|estuarine biome [ENVO:01000020]
 * Field Format: free text
 * Expected value: EnvO
 * Value syntax: {term}
@@ -164,8 +165,9 @@ Add terms that identify the major environment type(s) where your sample was coll
 
 **environment (feature)** : ``env_feature``
 
-* Definition: Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v1.53) terms listed under environmental feature can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
-Add terms that identify environmental entities having causal influences upon the entity at time of sampling, multiple terms can be separated by pipes, e.g.: shoreline [ENVO:00000486]|intertidal zone [ENVO:00000316]
+* Definition:
+    | Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v1.53) terms listed under environmental feature can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
+    | Add terms that identify environmental entities having causal influences upon the entity at time of sampling, multiple terms can be separated by pipes, e.g.: shoreline [ENVO:00000486]|intertidal zone [ENVO:00000316]
 * Field Format: free text
 * Expected value: EnvO
 * Value syntax: {term}
@@ -173,8 +175,9 @@ Add terms that identify environmental entities having causal influences upon the
 
 **environment (material)** : ``env_material``
 
-* Definition: The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental matter terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v1.53) terms listed under environmental matter can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
-Add terms that identify the material displaced by the entity at time of sampling. Recommend subclasses of environmental material [ENVO:00010483]. Multiple terms can be separated by pipes e.g.: estuarine water [ENVO:01000301]|estuarine mud [ENVO:00002160]
+* Definition:
+    | The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental matter terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v1.53) terms listed under environmental matter can be found from the link: http://www.environmentontology.org/Browse-EnvO or https://www.ebi.ac.uk/ols/ontologies/envo
+    | Add terms that identify the material displaced by the entity at time of sampling. Recommend subclasses of environmental material [ENVO:00010483]. Multiple terms can be separated by pipes e.g.: estuarine water [ENVO:01000301]|estuarine mud [ENVO:00002160]
 * Field Format: free text
 * Expected value: EnvO
 * Value syntax: {term}
@@ -199,7 +202,7 @@ Add terms that identify the material displaced by the entity at time of sampling
 internal environment
 ~~~~~~~~~~~~~~~~~~~~
 
-**building occupancy type ** : ``build_occup_type``
+**building occupancy type** : ``build_occup_type``
 
 * Definition: the primary function for which a building or discrete part of a building is intended to be used
 * Field Format: text choice
@@ -227,7 +230,7 @@ internal environment
 * Expected value: enumeration
 * Value syntax: ['', 'radiant system', 'heat pump', 'forced air system', 'steam forced heat', 'wood stove', 'missing', 'not applicable', 'not collected']
 
-**indoor space ** : ``indoor_space``
+**indoor space** : ``indoor_space``
 
 * Definition: a distinguishable space within a structure, the purpose for which discrete areas of a building is used
 * Field Format: text choice
@@ -262,14 +265,14 @@ internal environment
 * Expected value: measurement value
 * Value syntax: {float}
 
-**space typical state ** : ``space_typ_state``
+**space typical state** : ``space_typ_state``
 
 * Definition: customary or normal state of the space
 * Field Format: text choice
 * Expected value: enumeration
 * Value syntax: ['', 'typical occupied', 'typically unoccupied', 'missing', 'not applicable', 'not collected']
 
-**substructure type ** : ``substructure_type``
+**substructure type** : ``substructure_type``
 
 * Definition: the substructure or under building is that largely hidden section of the building which is built off the foundations to the ground floor level
 * Field Format: text choice
