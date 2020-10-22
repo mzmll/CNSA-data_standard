@@ -6,34 +6,6 @@ Description of biological source material; each physically unique specimen shoul
 Sample classification
 ---------------------
 
-geography
-~~~~~~~~~
-
-**profile position** : ``profile_position``
-
-* Definition: cross-sectional position in the hillslope where sample was collected. sample area position in relation to surrounding areas
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
-
-
-**slope aspect** : ``slope_aspect``
-
-* Definition: the direction a slope faces. While looking down a slope use a compass to record the direction you are facing (direction or degrees); e.g., NW or 315 degrees. This measure provides an indication of sun and wind exposure that will influence soil temperature and evapotranspiration.
-* Field Format: free text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: degree
-
-**slope gradient** : ``slope_gradient``
-
-* Definition: commonly called 'slope'. The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: percentage
-
-
 non-sample terms
 ~~~~~~~~~~~~~~~~
 
@@ -199,122 +171,154 @@ collection event information
 * Value syntax: {float} {float}
 * Example: 38.98 N 77.11 W
 
-internal environment
-~~~~~~~~~~~~~~~~~~~~
+organism characteristics
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-**building occupancy type** : ``build_occup_type``
+**age** : ``age``
 
-* Definition: the primary function for which a building or discrete part of a building is intended to be used
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'airport', 'agricultural', 'commercial', 'educational', 'government', 'health care', 'high rise', 'industrial', 'low rise', 'market', 'office', 'military', 'parking', 'residential', 'restaurant', 'school', 'sports complex', 'storage', 'religious', 'transport', 'wood framed', 'missing', 'not applicable', 'not collected']
-
-**building setting** : ``building_setting``
-
-* Definition: a location (geography) where a building is set
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'urban', 'suburban', 'exurban', 'rural', 'missing', 'not applicable', 'not collected']
-
-**filter type** : ``filter_type``
-
-* Definition: a device which removes solid particulates or airborne molecular contaminants
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'particulate air filter', 'chemical air filter', 'low-MERV pleated media', 'HEPA filter', 'electrostatic air treatment', 'gas-phase air treatment', 'ultraviolet air treatment', 'missing', 'not applicable', 'not collected']
-
-**heating and cooling system type** : ``heat_cool_type``
-
-* Definition: methods of conditioning or heating a room or building
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'radiant system', 'heat pump', 'forced air system', 'steam forced heat', 'wood stove', 'missing', 'not applicable', 'not collected']
-
-**indoor space** : ``indoor_space``
-
-* Definition: a distinguishable space within a structure, the purpose for which discrete areas of a building is used
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'bedroom', 'office', 'bathroom', 'foyer', 'kitchen', 'locker room', 'hallway', 'elevator', 'missing', 'not applicable', 'not collected']
-
-**indoor surface** : ``indoor_surf``
-
-* Definition: type of indoor surface
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'counter top', 'window', 'wall', 'cabinet', 'ceiling', 'door', 'shelving', 'vent cover']
-
-**light type** : ``light_type``
-
-* Definition: application of light to achieve some practical or aesthetic effect. Lighting includes the use of both artificial light sources such as lamps and light fixtures, as well as natural illumination by capturing daylight. Can also include absence of light
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'natural light', 'electric light', 'no light', 'missing', 'not applicable', 'not collected']
-
-**occupancy at sampling** : ``occup_samp``
-
-* Definition: number of occupants present at time of sample within the given space
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {integer}
-
-**occupant density at sampling** : ``occupant_dens_samp``
-
-* Definition: average number of occupants at time of sampling per square footage
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float}
-
-**space typical state** : ``space_typ_state``
-
-* Definition: customary or normal state of the space
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'typical occupied', 'typically unoccupied', 'missing', 'not applicable', 'not collected']
-
-**substructure type** : ``substructure_type``
-
-* Definition: the substructure or under building is that largely hidden section of the building which is built off the foundations to the ground floor level
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'crawlspace', 'slab on grade', 'basement']
-
-**surface material** : ``surf_material``
-
-* Definition: surface materials at the point of sampling
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'concrete', 'wood', 'stone', 'tile', 'plastic', 'glass', 'vinyl', 'metal', 'carpet', 'stainless steel', 'paint', 'cinder blocks', 'hay bales', 'stucco', 'adobe']
-
-**surface-air contaminant** : ``surf_air_cont``
-
-* Definition: contaminant identified on surface
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'dust', 'organic matter', 'particulate matter', 'volatile organic compounds', 'biological contaminants', 'radon', 'nutrients', 'biocides']
-
-**typical occupant density** : ``typ_occupant_dens``
-
-* Definition: customary or normal density of occupants
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float}
-
-**ventilation rate** : ``ventilation_rate``
-
-* Definition: ventilation rate of the system in the sampled premises
+* Definition: Age at the time of sampling; relevant scale depends on species and study, e.g. could be seconds for amoebae or centuries for trees.
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: cubic meter per minute, liters per second
+* Preferred unit: centuries,days,decades,hours,minutes,months,seconds,weeks,years
 
-**ventilation type** : ``ventilation_type``
+**beta-lactamase family** : ``beta_lactamase_family``
 
-* Definition: ventilation system used in the sampled premises
+* Definition: Specify the beta-lactamase family for this gene.
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'ACC', 'ACT', 'ADC', 'BEL', 'CARB', 'CBP', 'CFE', 'CMY', 'CTX-M', 'DHA', 'FOX', 'GES', 'GIM', 'KPC', 'IMI', 'IMP', 'IND', 'LAT', 'MIR', 'MOX', 'NDM', 'OXA', 'PER', 'PDC', 'SHV', 'SME', 'TEM', 'VEB', 'VIM', 'missing', 'not applicable', 'not collected']
+
+**carbapenemase** : ``carbapenemase``
+
+* Definition: Does the enzyme exhibit carbapenemase activity? If the enzyme does exhibit carbapenemase activity, the response should be "yes", otherwise "no".
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
+
+**ecotype** : ``ecotype``
+
+* Definition: A population within a given species displaying genetically based, phenotypic traits that reflect adaptation to a local habitat, e.g., Columbia
+
+**EDTA inhibitor tested** : ``edta_inhibitor_tested``
+
+* Definition: Was carbapenemase activity tested in the presence of EDTA? If carbapenemase activity was tested in the presence of EDTA, the response should be "yes", otherwise "no".
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
+
+**encoded traits** : ``encoded_traits``
+
+* Definition: traits like antibiotic resistance or xenobiotic degradation phenotypes for plasmids, converting genes for phage
 * Field Format: free text
-* Expected value: ventilation type name
+* Expected value: for plasmid: antibiotic resistance; for phage: converting genes
 * Value syntax: {text}
-* Example: forced ventilation, mechanical ventilation, natural ventilation
+
+**genotype** : ``genotype``
+
+* Definition: Observed genotype.
+* Field Format: free text
+* Expected value: genotype
+* Value syntax: {text}
+
+**height or length** : ``height_or_length``
+
+* Definition: Measurement of height or length.
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+
+**karyotype** : ``karyotype``
+
+**mating type** : ``mating_type``
+
+**observed biotic relationship** : ``biotic_relationship``
+
+* Definition: Is it free-living or in a host and if the latter what type of relationship is observed
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'free living', 'parasite', 'commensal', 'symbiont']
+
+**organism** : ``organism``
+
+* Definition: The most descriptive organism name for this sample (to the species, if relevant).
+
+**pathogenicity** : ``pathogenicity``
+
+* Definition: To what is the entity pathogenic, for instance plant, fungi, bacteria
+* Field Format: free text
+* Expected value: CV
+* Value syntax: {term}
+* Example: human, animal, plant, fungi, bacteria
+
+**pathotype** : ``pathotype``
+
+* Definition: Some bacterial specific pathotypes (example Eschericia coli - STEC, UPEC).
+
+**phenotype** : ``phenotype``
+
+* Definition: Phenotype of sampled organism. For Phenotypic Quality Ontology (PATO) (v1.269) terms, please see http://purl.bioontology.org/ontology/PATO
+* Field Format: free text
+* Expected value: PATO
+* Value syntax: {term}
+
+**population** : ``population``
+
+* Definition: for human: a collection of humans; for plants: filial generation, number of progeny, genetic structure
+
+**race** : ``race``
+
+**relationship to oxygen** : ``rel_to_oxygen``
+
+* Definition: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'aerobe', 'anaerobe', 'facultative', 'microaerophilic', 'microanaerobe', 'obligate aerobe', 'obligate anaerobe']
+
+**serotype** : ``serotype``
+
+* Definition: Taxonomy below subspecies; a variety (in bacteria, fungi or virus) usually based on its antigenic properties. Same as serovar and serogroup. e.g. serotype="H1N1" in Influenza A virus CY098518.
+
+**serovar** : ``serovar``
+
+* Definition: Taxonomy below subspecies; a variety (in bacteria, fungi or virus) usually based on its antigenic properties. Same as serotype and serogroup. Sometimes used as species identifier in bacteria with shaky taxonomy, e.g. Leptospira, serovar saopaolo S76607 (65357 in Entrez).
+
+**sex** : ``sex``
+
+* Definition: Physical sex of sampled organism.
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'missing', 'not applicable', 'not collected']
+
+**strain** : ``strain``
+
+* Definition: Microbial or eukaryotic strain name.
+
+**subgroup** : ``subgroup``
+
+* Definition: Taxonomy below subspecies; sometimes used in viruses to denote subgroups taken from a single isolate.
+
+**subspecific genetic lineage** : ``subspecf_gen_lin``
+
+* Definition: This should provide further information about the genetic distinctness of this lineage by recording additional information i.e biovar, serovar, serotype, biovar, or any relevant genetic typing schemes like Group I plasmid. It can also contain alternative taxonomic information
+* Field Format: free text
+* Expected value: genetic lineage below lowest rank of NCBI taxonomy, which is subspecies, e.g. serovar, biotype, ecotype
+* Value syntax: {text}
+
+**subtype** : ``subtype``
+
+* Definition: Used as classifier in viruses (e.g. HIV type 1, Group M, Subtype A).
+
+**taxonomy ID** : ``tax_id``
+
+* Definition: The Taxonomy ID indicates the taxonomic classification of the sample (e.g. 9606 for human). For metagenomic samples please browse the http://www.ebi.ac.uk/ena/data/view/Taxon:408169 for a suitable taxon. For a previously unsequenced organisms please contact datasubs@cngb.org for the provision of a new Taxonomy ID.
+
+**trophic level** : ``trophic_level``
+
+* Definition: Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'autotroph', 'carboxydotroph', 'chemoautotroph', 'chemoheterotroph', 'chemolithoautotroph', 'chemolithotroph', 'chemoorganoheterotroph', 'chemoorganotroph', 'chemosynthetic', 'chemotroph', 'copiotroph', 'diazotroph', 'facultative', 'heterotroph', 'lithoautotroph', 'lithoheterotroph', 'lithotroph', 'methanotroph', 'methylotroph', 'mixotroph', 'obligate', 'chemoautolithotroph', 'oligotroph', 'organoheterotroph', 'organotroph', 'photoautotroph', 'photoheterotroph', 'photolithoautotroph', 'photolithotroph', 'photosynthetic', 'phototroph']
 
 sample collection
 ~~~~~~~~~~~~~~~~~
@@ -634,212 +638,6 @@ sample collection
 * Value syntax: ['', 'filtration', 'ultrafiltration', 'centrifugation', 'ultracentrifugation', 'PEG Precipitation', 'FeCl Precipitation', 'CsCl density gradient', 'DNAse', 'RNAse', 'targeted sequence capture', 'missing', 'not applicable', 'not collected']
 * Example: filtration + FeCl Precipitation + ultracentrifugation + DNAse
 
-host disorder
-~~~~~~~~~~~~~
-
-**blood disorder** : ``blood_blood_disord``
-
-* Definition: history of blood disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**dermatology disorder** : ``dermatology_disord``
-
-* Definition: history of dermatology disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**gastrointestinal tract disorder** : ``gastrointest_disord``
-
-* Definition: history of gastrointestinal tract disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**gynecological disorder** : ``gynecologic_disord``
-
-* Definition: history of gynecological disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: gynecological disorder
-* Value syntax: {text}
-
-**host disease** : ``host_disease``
-
-* Definition: list of diseases with which the host has been diagnosed; can include multiple diagnoses. the value of the field depends on host; for humans the terms should be chosen from DO (Disease Ontology) at http://www.disease-ontology.org, other hosts are free text
-* Field Format: free text
-* Expected value: disease name or DO
-* Value syntax: {term}
-
-**host HIV status** : ``host_hiv_stat``
-
-* Definition: HIV status of subject, if yes HAART initiation status should also be indicated as [YES or NO]
-* Field Format: text choice
-* Expected value: HIV status;HAART initiation status
-* Value syntax: {boolean};{boolean}
-
-**kidney disorder** : ``kidney_disord``
-
-* Definition: history of kidney disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**liver disorder** : ``liver_disord``
-
-* Definition: history of liver disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**nose/mouth/teeth/throat disorder** : ``nose_mouth_teeth_throat_disord``
-
-* Definition: history of nose/mouth/teeth/throat disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**nose-throat disorder** : ``nose_throat_disord``
-
-* Definition: history of nose-throat disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**pulmonary disorder** : ``pulmonary_disord``
-
-* Definition: history of pulmonary disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**urogenital disorder** : ``urogenit_disord``
-
-* Definition: history of urogenital disorders, can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-**urogenital tract disorder** : ``urogenit_tract_disor``
-
-* Definition: history of urogenitaltract disorders; can include multiple disorders
-* Field Format: free text
-* Expected value: disorder name
-* Value syntax: {text}
-
-unusual properties
-~~~~~~~~~~~~~~~~~~
-
-**aluminium saturation** : ``al_sat``
-
-* Definition: aluminum saturation (esp. for tropical soils)
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: percentage
-
-**aluminium saturation method** : ``al_sat_meth``
-
-* Definition: reference or method used in determining Al saturation
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**extreme salinity** : ``extreme_salinity``
-
-* Definition: measured salinity
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: practical salinity unit
-
-**heavy metals** : ``heavy_metals``
-
-* Definition: heavy metals present and concentrations of any drug used by subject and the frequency of usage; can include multiple heavy metals and concentrations
-* Field Format: free text
-* Expected value: heavy metal name;measurement value
-* Value syntax: {text};{float} {unit}
-* Preferred unit: microgram per gram
-
-**heavy metals method** : ``heavy_metals_meth``
-
-* Definition: reference or method used in determining heavy metals
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**salinity method** : ``salinity_meth``
-
-* Definition: reference or method used in determining salinity
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-bioreactor
-~~~~~~~~~~
-
-**biochemical oxygen demand** : ``biochem_oxygen_dem``
-
-* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: milligram per liter
-
-**chemical oxygen demand** : ``chem_oxygen_dem``
-
-* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: milligram per liter
-
-**pre-treatment** : ``pre_treatment``
-
-* Definition: the process of pre-treatment removes materials that can be easily collected from the raw wastewater
-* Field Format: free text
-* Expected value: pre-treatment type
-* Value syntax: {text}
-
-**primary treatment** : ``primary_treatment``
-
-* Definition: the process to produce both a generally homogeneous liquid capable of being treated biologically and a sludge that can be separately treated or processed
-* Field Format: free text
-* Expected value: primary treatment type
-* Value syntax: {text}
-
-**reactor type** : ``reactor_type``
-
-* Definition: anaerobic digesters can be designed and engineered to operate using a number of different process configurations, as batch or continuous, mesophilic, high solid or low solid, and single stage or multistage
-* Field Format: free text
-* Expected value: reactor type name
-* Value syntax: {text}
-
-**secondary treatment** : ``secondary_treatment``
-
-* Definition: the process for substantially degrading the biological content of the sewage
-* Field Format: free text
-* Expected value: secondary treatment type
-* Value syntax: {text}
-
-**sludge retention time** : ``sludge_retent_time``
-
-* Definition: the time activated sludge remains in reactor
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: days,hours,minutes,weeks
-
-**tertiary treatment** : ``tertiary_treatment``
-
-* Definition: the process providing a final treatment stage to raise the effluent quality before it is discharged to the receiving environment
-* Field Format: free text
-* Expected value: tertiary treatment type
-* Value syntax: {text}
-
-**treatment** : ``treatment``
-
 host description
 ~~~~~~~~~~~~~~~~
 
@@ -1052,457 +850,375 @@ host description
 * Expected value: PO
 * Value syntax: {term}
 
-link
-~~~~
+host details
+~~~~~~~~~~~~
 
-**link to classification information** : ``link_class_info``
+**amniotic fluid color** : ``amniotic_fluid_color``
 
-* Definition: link to digitized soil maps or other soil classification information
+* Definition: specification of the color of the amniotic fluid sample
 * Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**link to climate information** : ``link_climate_info``
-
-* Definition: link to climate resource
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**links to additional analysis** : ``link_addit_analys``
-
-* Definition: link to additional analysis results performed on the sample
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-local environment conditions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**absolute air humidity** : ``abs_air_humidity``
-
-* Definition: actual mass of water vapor - mh20 - present in the air water vapor mixture
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit} [kg|lb]
-* Preferred unit: kilogram
-
-**air temperature** : ``air_temp``
-
-* Definition: temperature of the air at the time of sampling
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit} [deg C]
-* Preferred unit: degree Celsius
-
-**alkalinity** : ``alkalinity``
-
-* Definition: alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: milliequivalent per liter
-
-**annual and seasonal precipitation** : ``annual_season_precpt``
-
-* Definition: mean annual and seasonal precipitation (mm)
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: millimeter
-
-**annual and seasonal temperature** : ``annual_season_temp``
-
-* Definition: mean annual and seasonal temperature (oC)
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: degree Celsius
-
-**atmospheric data** : ``atmospheric_data``
-
-* Definition: measurement of atmospheric data; can include multiple data
-* Field Format: free text
-* Expected value: atmospheric data name;measurement value
-* Value syntax: {text};{float} {unit}
-
-**barometric pressure** : ``barometric_press``
-
-* Definition: force per unit area exerted against a surface by the weight of air above that surface
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: millibar
-
-**climate environment** : ``climate_environment``
-
-* Definition: treatment involving an exposure to a particular climate; can include multiple climates
-* Field Format: free text
-* Expected value: climate name;treatment duration;interval;experimental duration
-* Value syntax: {text};{period};{interval};{period}
-
-**conductivity** : ``conduc``
-
-* Definition: electrical conductivity of water
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: milliSiemens per centimeter
-
-**current land use** : ``cur_land_use``
-
-* Definition: present state of sample site
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'cities', 'farmstead', 'industrial areas', 'roads/railroads', 'rock', 'sand', 'gravel', 'mudflats', 'salt flats', 'badlands', 'permanent snow or ice', 'saline seeps', 'mines/quarries', 'oil waste areas', 'small grains', 'row crops', 'vegetable crops', 'horticultural plants (e.g. tulips)', 'marshlands (grass,sedges,rushes)', 'tundra (mosses,lichens)', 'rangeland', 'pastureland (grasslands used for livestock grazing)', 'hayland', 'meadows (grasses,alfalfa,fescue,bromegrass,timothy)', 'shrub land (e.g. mesquite,sage-brush,creosote bush,shrub oak,eucalyptus)', 'successional shrub land (tree saplings,hazels,sumacs,chokecherry,shrub dogwoods,blackberries)', 'shrub crops (blueberries,nursery ornamentals,filberts)', 'vine crops (grapes)', 'conifers (e.g. pine,spruce,fir,cypress)', 'hardwoods (e.g. oak,hickory,elm,aspen)', 'intermixed hardwood and conifers', 'tropical (e.g. mangrove,palms)', 'rainforest (evergreen forest receiving >406 cm annual rainfall)', 'swamp (permanent or semi-permanent water body dominated by woody plants)', 'crop trees (nuts,fruit,christmas trees,nursery trees)']
-
-**current vegetation** : ``cur_vegetation``
-
-* Definition: vegetation classification from one or more standard classification systems, or agricultural crop
-* Field Format: free text
-* Expected value: current vegetation type
+* Expected value: color
 * Value syntax: {text}
 
-**current vegetation method** : ``cur_vegetation_meth``
+**birth control** : ``birth_control``
 
-* Definition: reference or method used in vegetation classification
+* Definition: specification of birth control medication used
 * Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**dew point** : ``dew_point``
-
-* Definition: the temperature to which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water.
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: ºC
-
-
-**downward PAR** : ``down_par``
-
-* Definition: visible waveband radiance and irradiance measurements in the water column
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: microEinstein per square meter per second
-
-**drainage classification** : ``drainage_class``
-
-* Definition: drainage classification from a standard system such as the USDA system
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'very poorly', 'poorly', 'somewhat poorly', 'moderately well', 'well', 'excessively drained']
-
-**FAO classification** : ``fao_class``
-
-* Definition: soil classification from the FAO World Reference Database for Soil Resources. The list can be found at http://www.fao.org/3/i3794en/I3794en.pdf
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: {term}
-
-**fluorescence** : ``fluor``
-
-* Definition: raw (volts) or converted (mg Chla/m^3) fluorescence of the water
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: milligram chlorophyll a per cubic meter
-
-**gaseous environment** : ``gaseous_environment``
-
-* Definition: use of conditions with differing gaseous environments; should include the name of gaseous compound, amount administered, treatment duration, interval and total experimental duration; can include multiple gaseous environment regimens
-* Field Format: free text
-* Expected value: gaseous compound name;gaseous compound amount;treatment duration;interval;experimental duration
-* Value syntax: {text};{float} {unit};{period};{interval};{period}
-* Preferred unit: micromole per liter
-
-**horizon** : ``horizon``
-
-* Definition: specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'O horizon', 'A horizon', 'E horizon', 'B horizon', 'C horizon', 'R layer', 'Permafrost']
-
-**horizon method** : ``horizon_meth``
-
-* Definition: reference or method used in determining the horizon
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**humidity** : ``humidity``
-
-* Definition: amount of water vapour in the air, at the time of sampling
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: gram per cubic meter
-
-**industrial effluent percent** : ``indust_eff_percent``
-
-* Definition: percentage of industrial effluents received by wastewater treatment plant
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: percentage
-
-**light intensity** : ``light_intensity``
-
-* Definition: measurement of light intensity
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: lux
-
-**local classification** : ``local_class``
-
-* Definition: soil classification based on local soil classification system
-* Field Format: free text
-* Expected value: local classification name
+* Expected value: medication name
 * Value syntax: {text}
 
-**local classification method** : ``local_class_meth``
+**dominant hand** : ``dominant_hand``
 
-* Definition: reference or method used in determining the local soil classification
+* Definition: dominant hand of the subject
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'left', 'right', 'ambidextrous']
+
+**douche** : ``douche``
+
+* Definition: date of most recent douche
 * Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
+* Expected value: timestamp
+* Value syntax: {timestamp}
 
-**mean friction velocity** : ``mean_frict_vel``
+**foetal health status** : ``foetal_health_stat``
 
-* Definition: measurement of mean friction velocity
+* Definition: specification of foetal health status, should also include abortion
+* Field Format: free text
+* Expected value: health status
+* Value syntax: {text}
+
+**gestation state** : ``gestation_state``
+
+* Definition: specification of the gestation state
+* Field Format: free text
+* Expected value: gestation state
+* Value syntax: {text}
+
+**gravidity** : ``gravidity``
+
+* Definition: information about treatment involving use of gravity factor to study various types of responses in presence, absence or modified levels of gravity; can include multiple treatments
+* Field Format: free text
+* Expected value: gravity factor value;treatment duration;interval;experimental duration
+* Value syntax: {float} {unit};{period};{interval};{period}
+* Preferred unit: meter per square second, g
+
+**host blood pressure diastolic** : ``host_blood_press_diast``
+
+* Definition: resting diastolic blood pressure of the host, measured as mm mercury
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: meter per second
+* Preferred unit: millimeter mercury
 
-**mean peak friction velocity** : ``mean_peak_frict_vel``
+**host blood pressure systolic** : ``host_blood_press_syst``
 
-* Definition: measurement of mean peak friction velocity
+* Definition: resting systolic blood pressure of the host, measured as mm mercury
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: meter per second
+* Preferred unit: millimeter mercury
 
-**particle classification** : ``particle_class``
+**host diet** : ``host_diet``
 
-* Definition: particles are classified, based on their size, into six general categories:clay, silt, sand, gravel, cobbles, and boulders; should include amount of particle preceded by the name of the particle type; can include multiple values
+* Definition: type of diet depending on the host, for animals omnivore, herbivore etc., for humans high-fat, meditteranean etc.; can include multiple diet types
 * Field Format: free text
-* Expected value: particle name;measurement value
-* Value syntax: {text};{float} {unit}
-* Preferred unit: micrometer
+* Expected value: diet type
+* Value syntax: {text}
 
-**pH** : ``ph``
+**host family relationship** : ``host_family_relationship``
 
-* Definition: pH measurement
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float}
-
-**pH method** : ``ph_meth``
-
-* Definition: reference or method used in determining pH
+* Definition: relationships to other hosts in the same study; can include multiple relationships
 * Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
+* Expected value: relationship type;arbitrary identifier
+* Value syntax: {text};{text}
 
-**photon flux** : ``photon_flux``
+**host genotype** : ``host_genotype``
 
-* Definition: measurement of photon flux
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: micromole per square meter per second
-
-**pollutants** : ``pollutants``
-
-* Definition: pollutant types and, amount or concentrations measured at the time of sampling; can report multiple pollutants by entering numeric values preceded by name of pollutant
+* Definition: observed genotype
 * Field Format: free text
-* Expected value: pollutant name;measurement value
-* Value syntax: {text};{float} {unit}
-* Preferred unit: gram, mole per liter, milligram per liter
+* Expected value: genotype
+* Value syntax: {text}
 
-**porosity** : ``porosity``
+**host last meal** : ``host_last_meal``
 
-* Definition: porosity of deposited sediment is volume of voids divided by the total volume of sample
+* Definition: content of last meal and time since feeding; can include multiple values
+* Field Format: free text
+* Expected value: content;time interval
+* Value syntax: {text};{period}
+
+**host pulse** : ``host_pulse``
+
+* Definition: resting pulse of the host, measured as beats per minute
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: percentage
+* Preferred unit: beats per minute
 
-**presence of pets or farm animals** : ``pet_farm_animal``
+**HRT** : ``hrt``
 
-* Definition: specification of presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present
+* Definition: whether subject had hormone replacement theraphy, and if yes start date
 * Field Format: free text
-* Expected value: presence status;type of animal or pet
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**hysterectomy** : ``hysterectomy``
+
+* Definition: specification of whether hysterectomy was performed
+* Field Format: text choice
+* Expected value: hysterectomy status
+* Value syntax: {boolean}
+* Example: yes,no
+
+**major diet change in last six months** : ``diet_last_six_month``
+
+* Definition: specification of major diet changes in the last six months, if yes the change should be specified
+* Field Format: free text
+* Expected value: diet change;current diet
 * Value syntax: {boolean};{text}
 
-**pressure** : ``pressure``
+**maternal health status** : ``maternal_health_stat``
 
-* Definition: pressure to which the sample is subject, in atmospheres
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: atmosphere
-
-**relative air humidity** : ``rel_air_humidity``
-
-* Definition: partial vapor and air pressure, density of the vapor and air, or by the actual mass of the vapor and air
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit} [%]
-* Preferred unit: percentage
-
-**seasonal environment** : ``season_environment``
-
-* Definition: treatment involving an exposure to a particular season (e.g. winter, summer, rabi, rainy etc.)
+* Definition: specification of the maternal health status
 * Field Format: free text
-* Expected value: seasonal environment name;treatment duration;interval;experimental duration
-* Value syntax: {text};{period};{interval};{period}
+* Expected value: health status
+* Value syntax: {text}
 
-**sediment type** : ``sediment_type``
+**menarche** : ``menarche``
 
-* Definition: information about the sediment type based on major constituents
+* Definition: date of most recent menstruation
+* Field Format: free text
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**menopause** : ``menopause``
+
+* Definition: date of onset of menopause
+* Field Format: free text
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**pregnancy** : ``pregnancy``
+
+* Definition: date due of pregnancy
+* Field Format: free text
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**sexual activity** : ``sexual_act``
+
+* Definition: current sexual partner and frequency of sex
+* Field Format: free text
+* Expected value: partner sex;frequency
+* Value syntax: {text}
+
+**smoker** : ``smoker``
+
+* Definition: specification of smoking status
+* Field Format: text choice
+* Expected value: smoking status
+* Value syntax: [", 'ex-smoker', 'non-smoker', 'smoker']
+
+**special diet** : ``special_diet``
+
+* Definition: specification of special diet; can include multiple special diets
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'biogenous', 'cosmogenous', 'hydrogenous', 'lithogenous']
+* Value syntax: ['', 'low carb', 'reduced calorie', 'vegetarian', 'other(to be specified)']
 
-**sewage type** : ``sewage_type``
+**time since last toothbrushing** : ``time_last_toothbrush``
 
-* Definition: Type of sewage based on origin: wastewater treatment plant (municipal or industrial), open sewer line, river, stream, stagnant pool, or other.
+* Definition: specification of the time since last toothbrushing
+* Field Format: restricted text
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**time since last wash** : ``time_since_last_wash``
+
+* Definition: specification of the time since last wash
+* Field Format: restricted text
+* Expected value: timestamp
+* Value syntax: {timestamp}
+
+**travel outside the country in last six months** : ``travel_out_six_month``
+
+* Definition: specification of the countries travelled in the last six months; can include multiple travels
 * Field Format: free text
-* Expected value: sewage type name
+* Expected value: country name
 * Value syntax: {text}
 
-**soil type** : ``soil_type``
+**twin sibling presence** : ``twin_sibling``
 
-* Definition: soil series name or other lower-level classification
-* Field Format: free text
-* Expected value: soil type name
-* Value syntax: {text}
-
-**soil type method** : ``soil_type_meth``
-
-* Definition: reference or method used in determining soil series name or other lower-level classification
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**solar irradiance** : ``solar_irradiance``
-
-* Definition: the amount of solar energy that arrives at a specific area of a surface during a specific time interval
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: watts per square meter, ergs per square centimeter per second
-
-**surface humidity** : ``surf_humidity``
-
-* Definition: surfaces: water activity as a function of air and material moisture
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit} [%]
-* Preferred unit: percentage
-
-**surface moisture** : ``surf_moisture``
-
-* Definition: water held on a surface
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: parts per million, gram per cubic meter, gram per square meter
-
-**surface moisture pH** : ``surf_moisture_ph``
-
-* Definition: pH measurement of surface
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {integer [0-14]}
-
-**surface temperature** : ``surf_temp``
-
-* Definition: temperature of the surface at the time of sampling
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit} [deg C]
-* Preferred unit: degree Celsius
-
-**temperature** : ``temp``
-
-* Definition: temperature of the sample at time of sampling
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: degree Celsius
-
-**texture** : ``texture``
-
-* Definition: the relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional.
-* Field Format: free text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: % sand/silt/clay
-
-**texture method** : ``texture_meth``
-
-* Definition: reference or method used in determining soil texture
-* Field Format: free text
-* Expected value: PMID,DOI or url
-* Value syntax: {PMID\|DOI\|URL}
-
-**tidal stage** : ``tidal_stage``
-
-* Definition: stage of tide
+* Definition: specification of twin sibling presence
 * Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'low', 'high']
+* Expected value: presence status
+* Value syntax: {boolean}
 
-**total depth of water column** : ``tot_depth_water_col``
+**weight loss in last three months** : ``weight_loss_3_month``
 
-* Definition: measurement of total depth of water column
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: meter
-
-**turbidity** : ``turbidity``
-
-* Definition: turbidity measurement
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: formazin turbidity unit, formazin nephelometric units
-
-**wastewater type** : ``wastewater_type``
-
-* Definition: the origin of wastewater such as human waste, rainfall, storm drains, etc.
+* Definition: specification of weight loss in the last three months, if yes should be further specified to include amount of weight loss
 * Field Format: free text
-* Expected value: wastewater type name
+* Expected value: weight loss specification;measurement value
+* Value syntax: {boolean};{float} {unit}
+* Preferred unit: kilogram, gram
+
+host disorder
+~~~~~~~~~~~~~
+
+**blood disorder** : ``blood_blood_disord``
+
+* Definition: history of blood disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
 * Value syntax: {text}
 
-**water current** : ``water_current``
+**dermatology disorder** : ``dermatology_disord``
 
-* Definition: measurement of magnitude and direction of flow within a fluid
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: cubic meter per second, knots
-
-**wind direction** : ``wind_direction``
-
-* Definition: wind direction is the direction from which a wind originates
+* Definition: history of dermatology disorders; can include multiple disorders
 * Field Format: free text
-* Expected value: wind direction name
+* Expected value: disorder name
 * Value syntax: {text}
 
-**wind speed** : ``wind_speed``
+**gastrointestinal tract disorder** : ``gastrointest_disord``
 
-* Definition: speed of wind measured at the time of sampling
+* Definition: history of gastrointestinal tract disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**gynecological disorder** : ``gynecologic_disord``
+
+* Definition: history of gynecological disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: gynecological disorder
+* Value syntax: {text}
+
+**host disease** : ``host_disease``
+
+* Definition: list of diseases with which the host has been diagnosed; can include multiple diagnoses. the value of the field depends on host; for humans the terms should be chosen from DO (Disease Ontology) at http://www.disease-ontology.org, other hosts are free text
+* Field Format: free text
+* Expected value: disease name or DO
+* Value syntax: {term}
+
+**host HIV status** : ``host_hiv_stat``
+
+* Definition: HIV status of subject, if yes HAART initiation status should also be indicated as [YES or NO]
+* Field Format: text choice
+* Expected value: HIV status;HAART initiation status
+* Value syntax: {boolean};{boolean}
+
+**kidney disorder** : ``kidney_disord``
+
+* Definition: history of kidney disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**liver disorder** : ``liver_disord``
+
+* Definition: history of liver disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**nose/mouth/teeth/throat disorder** : ``nose_mouth_teeth_throat_disord``
+
+* Definition: history of nose/mouth/teeth/throat disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**nose-throat disorder** : ``nose_throat_disord``
+
+* Definition: history of nose-throat disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**pulmonary disorder** : ``pulmonary_disord``
+
+* Definition: history of pulmonary disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**urogenital disorder** : ``urogenit_disord``
+
+* Definition: history of urogenital disorders, can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+**urogenital tract disorder** : ``urogenit_tract_disor``
+
+* Definition: history of urogenitaltract disorders; can include multiple disorders
+* Field Format: free text
+* Expected value: disorder name
+* Value syntax: {text}
+
+bioreactor
+~~~~~~~~~~
+
+**biochemical oxygen demand** : ``biochem_oxygen_dem``
+
+* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: meter per second, kilometer per hour
+* Preferred unit: milligram per liter
+
+**chemical oxygen demand** : ``chem_oxygen_dem``
+
+* Definition: a measure of the relative oxygen-depletion effect of a waste contaminant
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milligram per liter
+
+**pre-treatment** : ``pre_treatment``
+
+* Definition: the process of pre-treatment removes materials that can be easily collected from the raw wastewater
+* Field Format: free text
+* Expected value: pre-treatment type
+* Value syntax: {text}
+
+**primary treatment** : ``primary_treatment``
+
+* Definition: the process to produce both a generally homogeneous liquid capable of being treated biologically and a sludge that can be separately treated or processed
+* Field Format: free text
+* Expected value: primary treatment type
+* Value syntax: {text}
+
+**reactor type** : ``reactor_type``
+
+* Definition: anaerobic digesters can be designed and engineered to operate using a number of different process configurations, as batch or continuous, mesophilic, high solid or low solid, and single stage or multistage
+* Field Format: free text
+* Expected value: reactor type name
+* Value syntax: {text}
+
+**secondary treatment** : ``secondary_treatment``
+
+* Definition: the process for substantially degrading the biological content of the sewage
+* Field Format: free text
+* Expected value: secondary treatment type
+* Value syntax: {text}
+
+**sludge retention time** : ``sludge_retent_time``
+
+* Definition: the time activated sludge remains in reactor
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: days,hours,minutes,weeks
+
+**tertiary treatment** : ``tertiary_treatment``
+
+* Definition: the process providing a final treatment stage to raise the effluent quality before it is discharged to the receiving environment
+* Field Format: free text
+* Expected value: tertiary treatment type
+* Value syntax: {text}
+
+**treatment** : ``treatment``
 
 concentration measurement
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2094,441 +1810,601 @@ concentration measurement
 * Expected value: PMID,DOI or url
 * Value syntax: {PMID\|DOI\|URL}
 
-local environment history
-~~~~~~~~~~~~~~~~~~~~~~~~~
+geography
+~~~~~~~~~
 
-**agrochemical additions** : ``agrochem_addition``
+**profile position** : ``profile_position``
 
-* Definition: addition of fertilizers, pesticides, etc. - amount and time of applications
+* Definition: cross-sectional position in the hillslope where sample was collected. sample area position in relation to surrounding areas
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
+
+
+**slope aspect** : ``slope_aspect``
+
+* Definition: the direction a slope faces. While looking down a slope use a compass to record the direction you are facing (direction or degrees); e.g., NW or 315 degrees. This measure provides an indication of sun and wind exposure that will influence soil temperature and evapotranspiration.
 * Field Format: free text
-* Expected value: agrochemical name;agrochemical amount;timestamp
-* Value syntax: {text};{float} {unit};{timestamp}
-* Preferred unit: gram, mole per liter, milligram per liter
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: degree
 
-**crop rotation** : ``crop_rotation``
+**slope gradient** : ``slope_gradient``
 
-* Definition: whether or not crop is rotated, and if yes, rotation schedule
+* Definition: commonly called 'slope'. The angle between ground surface and a horizontal line (in percent). This is the direction that overland water would flow. This measure is usually taken with a hand level meter or clinometer
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: percentage
+
+internal environment
+~~~~~~~~~~~~~~~~~~~~
+
+**building occupancy type** : ``build_occup_type``
+
+* Definition: the primary function for which a building or discrete part of a building is intended to be used
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'airport', 'agricultural', 'commercial', 'educational', 'government', 'health care', 'high rise', 'industrial', 'low rise', 'market', 'office', 'military', 'parking', 'residential', 'restaurant', 'school', 'sports complex', 'storage', 'religious', 'transport', 'wood framed', 'missing', 'not applicable', 'not collected']
+
+**building setting** : ``building_setting``
+
+* Definition: a location (geography) where a building is set
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'urban', 'suburban', 'exurban', 'rural', 'missing', 'not applicable', 'not collected']
+
+**filter type** : ``filter_type``
+
+* Definition: a device which removes solid particulates or airborne molecular contaminants
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'particulate air filter', 'chemical air filter', 'low-MERV pleated media', 'HEPA filter', 'electrostatic air treatment', 'gas-phase air treatment', 'ultraviolet air treatment', 'missing', 'not applicable', 'not collected']
+
+**heating and cooling system type** : ``heat_cool_type``
+
+* Definition: methods of conditioning or heating a room or building
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'radiant system', 'heat pump', 'forced air system', 'steam forced heat', 'wood stove', 'missing', 'not applicable', 'not collected']
+
+**indoor space** : ``indoor_space``
+
+* Definition: a distinguishable space within a structure, the purpose for which discrete areas of a building is used
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'bedroom', 'office', 'bathroom', 'foyer', 'kitchen', 'locker room', 'hallway', 'elevator', 'missing', 'not applicable', 'not collected']
+
+**indoor surface** : ``indoor_surf``
+
+* Definition: type of indoor surface
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'counter top', 'window', 'wall', 'cabinet', 'ceiling', 'door', 'shelving', 'vent cover']
+
+**light type** : ``light_type``
+
+* Definition: application of light to achieve some practical or aesthetic effect. Lighting includes the use of both artificial light sources such as lamps and light fixtures, as well as natural illumination by capturing daylight. Can also include absence of light
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'natural light', 'electric light', 'no light', 'missing', 'not applicable', 'not collected']
+
+**occupancy at sampling** : ``occup_samp``
+
+* Definition: number of occupants present at time of sample within the given space
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {integer}
+
+**occupant density at sampling** : ``occupant_dens_samp``
+
+* Definition: average number of occupants at time of sampling per square footage
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float}
+
+**space typical state** : ``space_typ_state``
+
+* Definition: customary or normal state of the space
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'typical occupied', 'typically unoccupied', 'missing', 'not applicable', 'not collected']
+
+**substructure type** : ``substructure_type``
+
+* Definition: the substructure or under building is that largely hidden section of the building which is built off the foundations to the ground floor level
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'crawlspace', 'slab on grade', 'basement']
+
+**surface material** : ``surf_material``
+
+* Definition: surface materials at the point of sampling
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'concrete', 'wood', 'stone', 'tile', 'plastic', 'glass', 'vinyl', 'metal', 'carpet', 'stainless steel', 'paint', 'cinder blocks', 'hay bales', 'stucco', 'adobe']
+
+**surface-air contaminant** : ``surf_air_cont``
+
+* Definition: contaminant identified on surface
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'dust', 'organic matter', 'particulate matter', 'volatile organic compounds', 'biological contaminants', 'radon', 'nutrients', 'biocides']
+
+**typical occupant density** : ``typ_occupant_dens``
+
+* Definition: customary or normal density of occupants
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float}
+
+**ventilation rate** : ``ventilation_rate``
+
+* Definition: ventilation rate of the system in the sampled premises
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: cubic meter per minute, liters per second
+
+**ventilation type** : ``ventilation_type``
+
+* Definition: ventilation system used in the sampled premises
 * Field Format: free text
-* Expected value: crop rotation status;schedule
-* Value syntax: {boolean};Rn/{timestamp}/{period}
+* Expected value: ventilation type name
+* Value syntax: {text}
+* Example: forced ventilation, mechanical ventilation, natural ventilation
 
-**extreme event** : ``extreme_event``
+link
+~~~~
 
-* Definition: unusual physical events that may have affected microbial populations
-* Field Format: free text
-* Expected value: date
-* Value syntax: {timestamp}
+**link to classification information** : ``link_class_info``
 
-**fire** : ``fire``
-
-* Definition: historical and/or physical evidence of fire
-* Field Format: free text
-* Expected value: date
-* Value syntax: {timestamp}
-
-**flooding** : ``flooding``
-
-* Definition: historical and/or physical evidence of flooding
-* Field Format: free text
-* Expected value: date
-* Value syntax: {timestamp}
-
-**previous land use** : ``previous_land_use``
-
-* Definition: previous land use and dates
-* Field Format: free text
-* Expected value: land use name;date
-* Value syntax: {text};{timestamp}
-
-**previous land use method** : ``previous_land_use_meth``
-
-* Definition: reference or method used in determining previous land use and dates
+* Definition: link to digitized soil maps or other soil classification information
 * Field Format: free text
 * Expected value: PMID,DOI or url
 * Value syntax: {PMID\|DOI\|URL}
 
-**tillage** : ``tillage``
+**link to climate information** : ``link_climate_info``
 
-* Definition: note method(s) used for tilling
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'drill', 'cutting disc', 'ridge till', 'strip tillage', 'zonal tillage', 'chisel', 'tined', 'mouldboard', 'disc plough']
-
-other
-~~~~~
-
-**description** : ``description``
-
-* Definition: Description of the sample.
+* Definition: link to climate resource
 * Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
 
-**miscellaneous parameter** : ``misc_param``
+**links to additional analysis** : ``link_addit_analys``
 
-* Definition: any other measurement performed or parameter collected, that is not listed here
+* Definition: link to additional analysis results performed on the sample
 * Field Format: free text
-* Expected value: parameter name;measurement value
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+local environment conditions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**absolute air humidity** : ``abs_air_humidity``
+
+* Definition: actual mass of water vapor - mh20 - present in the air water vapor mixture
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit} [kg|lb]
+* Preferred unit: kilogram
+
+**air temperature** : ``air_temp``
+
+* Definition: temperature of the air at the time of sampling
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit} [deg C]
+* Preferred unit: degree Celsius
+
+**alkalinity** : ``alkalinity``
+
+* Definition: alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milliequivalent per liter
+
+**annual and seasonal precipitation** : ``annual_season_precpt``
+
+* Definition: mean annual and seasonal precipitation (mm)
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: millimeter
+
+**annual and seasonal temperature** : ``annual_season_temp``
+
+* Definition: mean annual and seasonal temperature (oC)
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: degree Celsius
+
+**atmospheric data** : ``atmospheric_data``
+
+* Definition: measurement of atmospheric data; can include multiple data
+* Field Format: free text
+* Expected value: atmospheric data name;measurement value
 * Value syntax: {text};{float} {unit}
 
-host details
-~~~~~~~~~~~~
+**barometric pressure** : ``barometric_press``
 
-**amniotic fluid color** : ``amniotic_fluid_color``
+* Definition: force per unit area exerted against a surface by the weight of air above that surface
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: millibar
 
-* Definition: specification of the color of the amniotic fluid sample
+**climate environment** : ``climate_environment``
+
+* Definition: treatment involving an exposure to a particular climate; can include multiple climates
 * Field Format: free text
-* Expected value: color
-* Value syntax: {text}
+* Expected value: climate name;treatment duration;interval;experimental duration
+* Value syntax: {text};{period};{interval};{period}
 
-**birth control** : ``birth_control``
+**conductivity** : ``conduc``
 
-* Definition: specification of birth control medication used
-* Field Format: free text
-* Expected value: medication name
-* Value syntax: {text}
+* Definition: electrical conductivity of water
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milliSiemens per centimeter
 
-**dominant hand** : ``dominant_hand``
+**current land use** : ``cur_land_use``
 
-* Definition: dominant hand of the subject
+* Definition: present state of sample site
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'left', 'right', 'ambidextrous']
+* Value syntax: ['', 'cities', 'farmstead', 'industrial areas', 'roads/railroads', 'rock', 'sand', 'gravel', 'mudflats', 'salt flats', 'badlands', 'permanent snow or ice', 'saline seeps', 'mines/quarries', 'oil waste areas', 'small grains', 'row crops', 'vegetable crops', 'horticultural plants (e.g. tulips)', 'marshlands (grass,sedges,rushes)', 'tundra (mosses,lichens)', 'rangeland', 'pastureland (grasslands used for livestock grazing)', 'hayland', 'meadows (grasses,alfalfa,fescue,bromegrass,timothy)', 'shrub land (e.g. mesquite,sage-brush,creosote bush,shrub oak,eucalyptus)', 'successional shrub land (tree saplings,hazels,sumacs,chokecherry,shrub dogwoods,blackberries)', 'shrub crops (blueberries,nursery ornamentals,filberts)', 'vine crops (grapes)', 'conifers (e.g. pine,spruce,fir,cypress)', 'hardwoods (e.g. oak,hickory,elm,aspen)', 'intermixed hardwood and conifers', 'tropical (e.g. mangrove,palms)', 'rainforest (evergreen forest receiving >406 cm annual rainfall)', 'swamp (permanent or semi-permanent water body dominated by woody plants)', 'crop trees (nuts,fruit,christmas trees,nursery trees)']
 
-**douche** : ``douche``
+**current vegetation** : ``cur_vegetation``
 
-* Definition: date of most recent douche
+* Definition: vegetation classification from one or more standard classification systems, or agricultural crop
 * Field Format: free text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**foetal health status** : ``foetal_health_stat``
-
-* Definition: specification of foetal health status, should also include abortion
-* Field Format: free text
-* Expected value: health status
+* Expected value: current vegetation type
 * Value syntax: {text}
 
-**gestation state** : ``gestation_state``
+**current vegetation method** : ``cur_vegetation_meth``
 
-* Definition: specification of the gestation state
+* Definition: reference or method used in vegetation classification
 * Field Format: free text
-* Expected value: gestation state
-* Value syntax: {text}
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
 
-**gravidity** : ``gravidity``
+**dew point** : ``dew_point``
 
-* Definition: information about treatment involving use of gravity factor to study various types of responses in presence, absence or modified levels of gravity; can include multiple treatments
-* Field Format: free text
-* Expected value: gravity factor value;treatment duration;interval;experimental duration
-* Value syntax: {float} {unit};{period};{interval};{period}
-* Preferred unit: meter per square second, g
-
-**host blood pressure diastolic** : ``host_blood_press_diast``
-
-* Definition: resting diastolic blood pressure of the host, measured as mm mercury
+* Definition: the temperature to which a given parcel of humid air must be cooled, at constant barometric pressure, for water vapor to condense into water.
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: millimeter mercury
+* Preferred unit: ºC
 
-**host blood pressure systolic** : ``host_blood_press_syst``
 
-* Definition: resting systolic blood pressure of the host, measured as mm mercury
+**downward PAR** : ``down_par``
+
+* Definition: visible waveband radiance and irradiance measurements in the water column
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: millimeter mercury
+* Preferred unit: microEinstein per square meter per second
 
-**host diet** : ``host_diet``
+**drainage classification** : ``drainage_class``
 
-* Definition: type of diet depending on the host, for animals omnivore, herbivore etc., for humans high-fat, meditteranean etc.; can include multiple diet types
-* Field Format: free text
-* Expected value: diet type
-* Value syntax: {text}
-
-**host family relationship** : ``host_family_relationship``
-
-* Definition: relationships to other hosts in the same study; can include multiple relationships
-* Field Format: free text
-* Expected value: relationship type;arbitrary identifier
-* Value syntax: {text};{text}
-
-**host genotype** : ``host_genotype``
-
-* Definition: observed genotype
-* Field Format: free text
-* Expected value: genotype
-* Value syntax: {text}
-
-**host last meal** : ``host_last_meal``
-
-* Definition: content of last meal and time since feeding; can include multiple values
-* Field Format: free text
-* Expected value: content;time interval
-* Value syntax: {text};{period}
-
-**host pulse** : ``host_pulse``
-
-* Definition: resting pulse of the host, measured as beats per minute
-* Field Format: restricted text
-* Expected value: measurement value
-* Value syntax: {float} {unit}
-* Preferred unit: beats per minute
-
-**HRT** : ``hrt``
-
-* Definition: whether subject had hormone replacement theraphy, and if yes start date
-* Field Format: free text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**hysterectomy** : ``hysterectomy``
-
-* Definition: specification of whether hysterectomy was performed
+* Definition: drainage classification from a standard system such as the USDA system
 * Field Format: text choice
-* Expected value: hysterectomy status
-* Value syntax: {boolean}
-* Example: yes,no
+* Expected value: enumeration
+* Value syntax: ['', 'very poorly', 'poorly', 'somewhat poorly', 'moderately well', 'well', 'excessively drained']
 
-**major diet change in last six months** : ``diet_last_six_month``
+**FAO classification** : ``fao_class``
 
-* Definition: specification of major diet changes in the last six months, if yes the change should be specified
+* Definition: soil classification from the FAO World Reference Database for Soil Resources. The list can be found at http://www.fao.org/3/i3794en/I3794en.pdf
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: {term}
+
+**fluorescence** : ``fluor``
+
+* Definition: raw (volts) or converted (mg Chla/m^3) fluorescence of the water
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: milligram chlorophyll a per cubic meter
+
+**gaseous environment** : ``gaseous_environment``
+
+* Definition: use of conditions with differing gaseous environments; should include the name of gaseous compound, amount administered, treatment duration, interval and total experimental duration; can include multiple gaseous environment regimens
 * Field Format: free text
-* Expected value: diet change;current diet
+* Expected value: gaseous compound name;gaseous compound amount;treatment duration;interval;experimental duration
+* Value syntax: {text};{float} {unit};{period};{interval};{period}
+* Preferred unit: micromole per liter
+
+**horizon** : ``horizon``
+
+* Definition: specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'O horizon', 'A horizon', 'E horizon', 'B horizon', 'C horizon', 'R layer', 'Permafrost']
+
+**horizon method** : ``horizon_meth``
+
+* Definition: reference or method used in determining the horizon
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**humidity** : ``humidity``
+
+* Definition: amount of water vapour in the air, at the time of sampling
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: gram per cubic meter
+
+**industrial effluent percent** : ``indust_eff_percent``
+
+* Definition: percentage of industrial effluents received by wastewater treatment plant
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: percentage
+
+**light intensity** : ``light_intensity``
+
+* Definition: measurement of light intensity
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: lux
+
+**local classification** : ``local_class``
+
+* Definition: soil classification based on local soil classification system
+* Field Format: free text
+* Expected value: local classification name
+* Value syntax: {text}
+
+**local classification method** : ``local_class_meth``
+
+* Definition: reference or method used in determining the local soil classification
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**mean friction velocity** : ``mean_frict_vel``
+
+* Definition: measurement of mean friction velocity
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: meter per second
+
+**mean peak friction velocity** : ``mean_peak_frict_vel``
+
+* Definition: measurement of mean peak friction velocity
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: meter per second
+
+**particle classification** : ``particle_class``
+
+* Definition: particles are classified, based on their size, into six general categories:clay, silt, sand, gravel, cobbles, and boulders; should include amount of particle preceded by the name of the particle type; can include multiple values
+* Field Format: free text
+* Expected value: particle name;measurement value
+* Value syntax: {text};{float} {unit}
+* Preferred unit: micrometer
+
+**pH** : ``ph``
+
+* Definition: pH measurement
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float}
+
+**pH method** : ``ph_meth``
+
+* Definition: reference or method used in determining pH
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**photon flux** : ``photon_flux``
+
+* Definition: measurement of photon flux
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: micromole per square meter per second
+
+**pollutants** : ``pollutants``
+
+* Definition: pollutant types and, amount or concentrations measured at the time of sampling; can report multiple pollutants by entering numeric values preceded by name of pollutant
+* Field Format: free text
+* Expected value: pollutant name;measurement value
+* Value syntax: {text};{float} {unit}
+* Preferred unit: gram, mole per liter, milligram per liter
+
+**porosity** : ``porosity``
+
+* Definition: porosity of deposited sediment is volume of voids divided by the total volume of sample
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: percentage
+
+**presence of pets or farm animals** : ``pet_farm_animal``
+
+* Definition: specification of presence of pets or farm animals in the environment of subject, if yes the animals should be specified; can include multiple animals present
+* Field Format: free text
+* Expected value: presence status;type of animal or pet
 * Value syntax: {boolean};{text}
 
-**maternal health status** : ``maternal_health_stat``
+**pressure** : ``pressure``
 
-* Definition: specification of the maternal health status
-* Field Format: free text
-* Expected value: health status
-* Value syntax: {text}
-
-**menarche** : ``menarche``
-
-* Definition: date of most recent menstruation
-* Field Format: free text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**menopause** : ``menopause``
-
-* Definition: date of onset of menopause
-* Field Format: free text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**pregnancy** : ``pregnancy``
-
-* Definition: date due of pregnancy
-* Field Format: free text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**sexual activity** : ``sexual_act``
-
-* Definition: current sexual partner and frequency of sex
-* Field Format: free text
-* Expected value: partner sex;frequency
-* Value syntax: {text}
-
-**smoker** : ``smoker``
-
-* Definition: specification of smoking status
-* Field Format: text choice
-* Expected value: smoking status
-* Value syntax: [", 'ex-smoker', 'non-smoker', 'smoker']
-
-**special diet** : ``special_diet``
-
-* Definition: specification of special diet; can include multiple special diets
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'low carb', 'reduced calorie', 'vegetarian', 'other(to be specified)']
-
-**time since last toothbrushing** : ``time_last_toothbrush``
-
-* Definition: specification of the time since last toothbrushing
-* Field Format: restricted text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**time since last wash** : ``time_since_last_wash``
-
-* Definition: specification of the time since last wash
-* Field Format: restricted text
-* Expected value: timestamp
-* Value syntax: {timestamp}
-
-**travel outside the country in last six months** : ``travel_out_six_month``
-
-* Definition: specification of the countries travelled in the last six months; can include multiple travels
-* Field Format: free text
-* Expected value: country name
-* Value syntax: {text}
-
-**twin sibling presence** : ``twin_sibling``
-
-* Definition: specification of twin sibling presence
-* Field Format: text choice
-* Expected value: presence status
-* Value syntax: {boolean}
-
-**weight loss in last three months** : ``weight_loss_3_month``
-
-* Definition: specification of weight loss in the last three months, if yes should be further specified to include amount of weight loss
-* Field Format: free text
-* Expected value: weight loss specification;measurement value
-* Value syntax: {boolean};{float} {unit}
-* Preferred unit: kilogram, gram
-
-organism characteristics
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-**age** : ``age``
-
-* Definition: Age at the time of sampling; relevant scale depends on species and study, e.g. could be seconds for amoebae or centuries for trees.
+* Definition: pressure to which the sample is subject, in atmospheres
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: centuries,days,decades,hours,minutes,months,seconds,weeks,years
+* Preferred unit: atmosphere
 
-**beta-lactamase family** : ``beta_lactamase_family``
+**relative air humidity** : ``rel_air_humidity``
 
-* Definition: Specify the beta-lactamase family for this gene.
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'ACC', 'ACT', 'ADC', 'BEL', 'CARB', 'CBP', 'CFE', 'CMY', 'CTX-M', 'DHA', 'FOX', 'GES', 'GIM', 'KPC', 'IMI', 'IMP', 'IND', 'LAT', 'MIR', 'MOX', 'NDM', 'OXA', 'PER', 'PDC', 'SHV', 'SME', 'TEM', 'VEB', 'VIM', 'missing', 'not applicable', 'not collected']
+* Definition: partial vapor and air pressure, density of the vapor and air, or by the actual mass of the vapor and air
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit} [%]
+* Preferred unit: percentage
 
-**carbapenemase** : ``carbapenemase``
+**seasonal environment** : ``season_environment``
 
-* Definition: Does the enzyme exhibit carbapenemase activity? If the enzyme does exhibit carbapenemase activity, the response should be "yes", otherwise "no".
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
-
-**ecotype** : ``ecotype``
-
-* Definition: A population within a given species displaying genetically based, phenotypic traits that reflect adaptation to a local habitat, e.g., Columbia
-
-**EDTA inhibitor tested** : ``edta_inhibitor_tested``
-
-* Definition: Was carbapenemase activity tested in the presence of EDTA? If carbapenemase activity was tested in the presence of EDTA, the response should be "yes", otherwise "no".
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
-
-**encoded traits** : ``encoded_traits``
-
-* Definition: traits like antibiotic resistance or xenobiotic degradation phenotypes for plasmids, converting genes for phage
+* Definition: treatment involving an exposure to a particular season (e.g. winter, summer, rabi, rainy etc.)
 * Field Format: free text
-* Expected value: for plasmid: antibiotic resistance; for phage: converting genes
+* Expected value: seasonal environment name;treatment duration;interval;experimental duration
+* Value syntax: {text};{period};{interval};{period}
+
+**sediment type** : ``sediment_type``
+
+* Definition: information about the sediment type based on major constituents
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'biogenous', 'cosmogenous', 'hydrogenous', 'lithogenous']
+
+**sewage type** : ``sewage_type``
+
+* Definition: Type of sewage based on origin: wastewater treatment plant (municipal or industrial), open sewer line, river, stream, stagnant pool, or other.
+* Field Format: free text
+* Expected value: sewage type name
 * Value syntax: {text}
 
-**genotype** : ``genotype``
+**soil type** : ``soil_type``
 
-* Definition: Observed genotype.
+* Definition: soil series name or other lower-level classification
 * Field Format: free text
-* Expected value: genotype
+* Expected value: soil type name
 * Value syntax: {text}
 
-**height or length** : ``height_or_length``
+**soil type method** : ``soil_type_meth``
 
-* Definition: Measurement of height or length.
+* Definition: reference or method used in determining soil series name or other lower-level classification
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**solar irradiance** : ``solar_irradiance``
+
+* Definition: the amount of solar energy that arrives at a specific area of a surface during a specific time interval
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
+* Preferred unit: watts per square meter, ergs per square centimeter per second
 
-**karyotype** : ``karyotype``
+**surface humidity** : ``surf_humidity``
 
-**mating type** : ``mating_type``
+* Definition: surfaces: water activity as a function of air and material moisture
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit} [%]
+* Preferred unit: percentage
 
-**observed biotic relationship** : ``biotic_relationship``
+**surface moisture** : ``surf_moisture``
 
-* Definition: Is it free-living or in a host and if the latter what type of relationship is observed
+* Definition: water held on a surface
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: parts per million, gram per cubic meter, gram per square meter
+
+**surface moisture pH** : ``surf_moisture_ph``
+
+* Definition: pH measurement of surface
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {integer [0-14]}
+
+**surface temperature** : ``surf_temp``
+
+* Definition: temperature of the surface at the time of sampling
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit} [deg C]
+* Preferred unit: degree Celsius
+
+**temperature** : ``temp``
+
+* Definition: temperature of the sample at time of sampling
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: degree Celsius
+
+**texture** : ``texture``
+
+* Definition: the relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional.
+* Field Format: free text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: % sand/silt/clay
+
+**texture method** : ``texture_meth``
+
+* Definition: reference or method used in determining soil texture
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**tidal stage** : ``tidal_stage``
+
+* Definition: stage of tide
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'free living', 'parasite', 'commensal', 'symbiont']
+* Value syntax: ['', 'low', 'high']
 
-**organism** : ``organism``
+**total depth of water column** : ``tot_depth_water_col``
 
-* Definition: The most descriptive organism name for this sample (to the species, if relevant).
+* Definition: measurement of total depth of water column
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: meter
 
-**pathogenicity** : ``pathogenicity``
+**turbidity** : ``turbidity``
 
-* Definition: To what is the entity pathogenic, for instance plant, fungi, bacteria
+* Definition: turbidity measurement
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: formazin turbidity unit, formazin nephelometric units
+
+**wastewater type** : ``wastewater_type``
+
+* Definition: the origin of wastewater such as human waste, rainfall, storm drains, etc.
 * Field Format: free text
-* Expected value: CV
-* Value syntax: {term}
-* Example: human, animal, plant, fungi, bacteria
-
-**pathotype** : ``pathotype``
-
-* Definition: Some bacterial specific pathotypes (example Eschericia coli - STEC, UPEC).
-
-**phenotype** : ``phenotype``
-
-* Definition: Phenotype of sampled organism. For Phenotypic Quality Ontology (PATO) (v1.269) terms, please see http://purl.bioontology.org/ontology/PATO
-* Field Format: free text
-* Expected value: PATO
-* Value syntax: {term}
-
-**population** : ``population``
-
-* Definition: for human: a collection of humans; for plants: filial generation, number of progeny, genetic structure
-
-**race** : ``race``
-
-**relationship to oxygen** : ``rel_to_oxygen``
-
-* Definition: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'aerobe', 'anaerobe', 'facultative', 'microaerophilic', 'microanaerobe', 'obligate aerobe', 'obligate anaerobe']
-
-**serotype** : ``serotype``
-
-* Definition: Taxonomy below subspecies; a variety (in bacteria, fungi or virus) usually based on its antigenic properties. Same as serovar and serogroup. e.g. serotype="H1N1" in Influenza A virus CY098518.
-
-**serovar** : ``serovar``
-
-* Definition: Taxonomy below subspecies; a variety (in bacteria, fungi or virus) usually based on its antigenic properties. Same as serotype and serogroup. Sometimes used as species identifier in bacteria with shaky taxonomy, e.g. Leptospira, serovar saopaolo S76607 (65357 in Entrez).
-
-**sex** : ``sex``
-
-* Definition: Physical sex of sampled organism.
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'missing', 'not applicable', 'not collected']
-
-**strain** : ``strain``
-
-* Definition: Microbial or eukaryotic strain name.
-
-**subgroup** : ``subgroup``
-
-* Definition: Taxonomy below subspecies; sometimes used in viruses to denote subgroups taken from a single isolate.
-
-**subspecific genetic lineage** : ``subspecf_gen_lin``
-
-* Definition: This should provide further information about the genetic distinctness of this lineage by recording additional information i.e biovar, serovar, serotype, biovar, or any relevant genetic typing schemes like Group I plasmid. It can also contain alternative taxonomic information
-* Field Format: free text
-* Expected value: genetic lineage below lowest rank of NCBI taxonomy, which is subspecies, e.g. serovar, biotype, ecotype
+* Expected value: wastewater type name
 * Value syntax: {text}
 
-**subtype** : ``subtype``
+**water current** : ``water_current``
 
-* Definition: Used as classifier in viruses (e.g. HIV type 1, Group M, Subtype A).
+* Definition: measurement of magnitude and direction of flow within a fluid
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: cubic meter per second, knots
 
-**taxonomy ID** : ``tax_id``
+**wind direction** : ``wind_direction``
 
-* Definition: The Taxonomy ID indicates the taxonomic classification of the sample (e.g. 9606 for human). For metagenomic samples please browse the http://www.ebi.ac.uk/ena/data/view/Taxon:408169 for a suitable taxon. For a previously unsequenced organisms please contact datasubs@cngb.org for the provision of a new Taxonomy ID.
+* Definition: wind direction is the direction from which a wind originates
+* Field Format: free text
+* Expected value: wind direction name
+* Value syntax: {text}
 
-**trophic level** : ``trophic_level``
+**wind speed** : ``wind_speed``
 
-* Definition: Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)
-* Field Format: text choice
-* Expected value: enumeration
-* Value syntax: ['', 'autotroph', 'carboxydotroph', 'chemoautotroph', 'chemoheterotroph', 'chemolithoautotroph', 'chemolithotroph', 'chemoorganoheterotroph', 'chemoorganotroph', 'chemosynthetic', 'chemotroph', 'copiotroph', 'diazotroph', 'facultative', 'heterotroph', 'lithoautotroph', 'lithoheterotroph', 'lithotroph', 'methanotroph', 'methylotroph', 'mixotroph', 'obligate', 'chemoautolithotroph', 'oligotroph', 'organoheterotroph', 'organotroph', 'photoautotroph', 'photoheterotroph', 'photolithoautotroph', 'photolithotroph', 'photosynthetic', 'phototroph']
+* Definition: speed of wind measured at the time of sampling
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: meter per second, kilometer per hour
 
 local environment conditions imposed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2718,3 +2594,126 @@ local environment conditions imposed
 * Expected value: measurement value;treatment duration;interval;experimental duration
 * Value syntax: {float} {unit};{period};{interval};{period}
 * Preferred unit: milliliter, liter
+
+local environment history
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**agrochemical additions** : ``agrochem_addition``
+
+* Definition: addition of fertilizers, pesticides, etc. - amount and time of applications
+* Field Format: free text
+* Expected value: agrochemical name;agrochemical amount;timestamp
+* Value syntax: {text};{float} {unit};{timestamp}
+* Preferred unit: gram, mole per liter, milligram per liter
+
+**crop rotation** : ``crop_rotation``
+
+* Definition: whether or not crop is rotated, and if yes, rotation schedule
+* Field Format: free text
+* Expected value: crop rotation status;schedule
+* Value syntax: {boolean};Rn/{timestamp}/{period}
+
+**extreme event** : ``extreme_event``
+
+* Definition: unusual physical events that may have affected microbial populations
+* Field Format: free text
+* Expected value: date
+* Value syntax: {timestamp}
+
+**fire** : ``fire``
+
+* Definition: historical and/or physical evidence of fire
+* Field Format: free text
+* Expected value: date
+* Value syntax: {timestamp}
+
+**flooding** : ``flooding``
+
+* Definition: historical and/or physical evidence of flooding
+* Field Format: free text
+* Expected value: date
+* Value syntax: {timestamp}
+
+**previous land use** : ``previous_land_use``
+
+* Definition: previous land use and dates
+* Field Format: free text
+* Expected value: land use name;date
+* Value syntax: {text};{timestamp}
+
+**previous land use method** : ``previous_land_use_meth``
+
+* Definition: reference or method used in determining previous land use and dates
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**tillage** : ``tillage``
+
+* Definition: note method(s) used for tilling
+* Field Format: text choice
+* Expected value: enumeration
+* Value syntax: ['', 'drill', 'cutting disc', 'ridge till', 'strip tillage', 'zonal tillage', 'chisel', 'tined', 'mouldboard', 'disc plough']
+
+unusual properties
+~~~~~~~~~~~~~~~~~~
+
+**aluminium saturation** : ``al_sat``
+
+* Definition: aluminum saturation (esp. for tropical soils)
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: percentage
+
+**aluminium saturation method** : ``al_sat_meth``
+
+* Definition: reference or method used in determining Al saturation
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**extreme salinity** : ``extreme_salinity``
+
+* Definition: measured salinity
+* Field Format: restricted text
+* Expected value: measurement value
+* Value syntax: {float} {unit}
+* Preferred unit: practical salinity unit
+
+**heavy metals** : ``heavy_metals``
+
+* Definition: heavy metals present and concentrations of any drug used by subject and the frequency of usage; can include multiple heavy metals and concentrations
+* Field Format: free text
+* Expected value: heavy metal name;measurement value
+* Value syntax: {text};{float} {unit}
+* Preferred unit: microgram per gram
+
+**heavy metals method** : ``heavy_metals_meth``
+
+* Definition: reference or method used in determining heavy metals
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+**salinity method** : ``salinity_meth``
+
+* Definition: reference or method used in determining salinity
+* Field Format: free text
+* Expected value: PMID,DOI or url
+* Value syntax: {PMID\|DOI\|URL}
+
+other
+~~~~~
+
+**description** : ``description``
+
+* Definition: Description of the sample.
+* Field Format: free text
+
+**miscellaneous parameter** : ``misc_param``
+
+* Definition: any other measurement performed or parameter collected, that is not listed here
+* Field Format: free text
+* Expected value: parameter name;measurement value
+* Value syntax: {text};{float} {unit}
