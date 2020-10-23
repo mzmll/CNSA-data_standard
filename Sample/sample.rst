@@ -2742,18 +2742,28 @@ CNSA sample checklist
 
 Sample types
 
-- Pathogen affecting public health : Use for pathogen samples that are relevant to public health.
+- Pathogen affecting public health
+   Use for pathogen samples that are relevant to public health.
   - Clinical or host-associated pathogen
   - Environmental, food or other pathogen
   - Combined pathogen: Batch submissions that include both clinical and environmental pathogen.
-- Microbial sample: Use for bacteria or other unicellular microbes when it is not appropriate or advantageous to use MIxS, Pathogen or Virus packages.
-- Model organism or animal sample: Use for multicellular samples or cell lines derived from common laboratory model organisms, e.g., mouse, rat, Drosophila, worm, fish, frog, or large mammals including zoo and farm animals.
-- Metagenome or environmental sample: Use for metagenomic and environmental samples when it is not appropriate or advantageous to use MIxS packages.
-- Invertebrate sample: Use for any invertebrate sample.
-- Human sample: Only use for human samples or cell lines that have no privacy concerns. For all studies involving human subjects, it is the submitter's responsibility to ensure that the information supplied protects participant privacy in accordance with all applicable laws, regulations and institutional policies. Make sure to remove any direct personal identifiers from your submission. For samples isolated from humans use the Pathogen, Microbe or appropriate MIxS package.
-- Plant sample: Use for any plant sample or cell line.
-- Virus sample: Use for all virus samples not directly associated with disease. Viral pathogens should be submitted using the Pathogen: Clinical or host-associated pathogen package.
-- GSC MIxS environmental sample: Genomic Standards Consortium package extension for reporting of measurements and observations obtained from the environment where the sample was obtained. The samples are validated for compliance based on the presence of the required core attributes as described in MIxS (http://gensc.org/gc_wiki/index.php/MIxS).
+- Microbial sample
+   Use for bacteria or other unicellular microbes when it is not appropriate or advantageous to use MIxS, Pathogen or Virus packages.
+- Model organism or animal sample
+   Use for multicellular samples or cell lines derived from common laboratory model organisms, e.g., mouse, rat, Drosophila, worm, fish, frog, or large mammals including zoo and farm animals.
+- Metagenome or environmental sample
+   Use for metagenomic and environmental samples when it is not appropriate or advantageous to use MIxS packages.
+- Invertebrate sample
+   Use for any invertebrate sample.
+- Human sample
+   Only use for human samples or cell lines that have no privacy concerns. For all studies involving human subjects, it is the submitter's responsibility to ensure that the information supplied protects participant privacy in accordance with all applicable laws, regulations and institutional policies. Make sure to remove any direct personal identifiers from your submission.
+   For samples isolated from humans use the Pathogen, Microbe or appropriate MIxS package.
+- Plant sample
+   Use for any plant sample or cell line.
+- Virus sample
+   Use for all virus samples not directly associated with disease. Viral pathogens should be submitted using the Pathogen: Clinical or host-associated pathogen package.
+- GSC MIxS environmental sample
+   Genomic Standards Consortium package extension for reporting of measurements and observations obtained from the environment where the sample was obtained. The samples are validated for compliance based on the presence of the required core attributes as described in MIxS (http://gensc.org/gc_wiki/index.php/MIxS).
   - GSC MIxS air
   - GSC MIxS built environment
   - GSC MIxS host associated
@@ -2770,7 +2780,8 @@ Sample types
   - GSC MIxS wastewater sludge
   - GSC MIxS water
 - Other
-  - Beta-lactamase: Use for beta-lactamase gene transformants that have antibiotic resistance data.
+  - Beta-lactamase
+     Use for beta-lactamase gene transformants that have antibiotic resistance data.
 
 
 Sample validation
