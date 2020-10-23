@@ -187,14 +187,14 @@ organism characteristics
 * Definition: Specify the beta-lactamase family for this gene.
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'ACC', 'ACT', 'ADC', 'BEL', 'CARB', 'CBP', 'CFE', 'CMY', 'CTX-M', 'DHA', 'FOX', 'GES', 'GIM', 'KPC', 'IMI', 'IMP', 'IND', 'LAT', 'MIR', 'MOX', 'NDM', 'OXA', 'PER', 'PDC', 'SHV', 'SME', 'TEM', 'VEB', 'VIM', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'ACC', 'ACT', 'ADC', 'BEL', 'CARB', 'CBP', 'CFE', 'CMY', 'CTX-M', 'DHA', 'FOX', 'GES', 'GIM', 'KPC', 'IMI', 'IMP', 'IND', 'LAT', 'MIR', 'MOX', 'NDM', 'OXA', 'PER', 'PDC', 'SHV', 'SME', 'TEM', 'VEB', 'VIM', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **carbapenemase** : ``carbapenemase``
 
 * Definition: Does the enzyme exhibit carbapenemase activity? If the enzyme does exhibit carbapenemase activity, the response should be "yes", otherwise "no".
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'yes', 'no', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **ecotype** : ``ecotype``
 
@@ -205,7 +205,7 @@ organism characteristics
 * Definition: Was carbapenemase activity tested in the presence of EDTA? If carbapenemase activity was tested in the presence of EDTA, the response should be "yes", otherwise "no".
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'yes', 'no', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'yes', 'no', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **encoded traits** : ``encoded_traits``
 
@@ -237,7 +237,7 @@ organism characteristics
 * Definition: Is it free-living or in a host and if the latter what type of relationship is observed
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'free living', 'parasite', 'commensal', 'symbiont']
+* Value syntax: ['', 'free living', 'parasite', 'commensal', 'symbiont', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **organism** : ``organism``
 
@@ -273,7 +273,7 @@ organism characteristics
 * Definition: Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'aerobe', 'anaerobe', 'facultative', 'microaerophilic', 'microanaerobe', 'obligate aerobe', 'obligate anaerobe']
+* Value syntax: ['', 'aerobe', 'anaerobe', 'facultative', 'microaerophilic', 'microanaerobe', 'obligate aerobe', 'obligate anaerobe', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **serotype** : ``serotype``
 
@@ -288,7 +288,7 @@ organism characteristics
 * Definition: Physical sex of sampled organism.
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **strain** : ``strain``
 
@@ -318,7 +318,7 @@ organism characteristics
 * Definition: Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'autotroph', 'carboxydotroph', 'chemoautotroph', 'chemoheterotroph', 'chemolithoautotroph', 'chemolithotroph', 'chemoorganoheterotroph', 'chemoorganotroph', 'chemosynthetic', 'chemotroph', 'copiotroph', 'diazotroph', 'facultative', 'heterotroph', 'lithoautotroph', 'lithoheterotroph', 'lithotroph', 'methanotroph', 'methylotroph', 'mixotroph', 'obligate', 'chemoautolithotroph', 'oligotroph', 'organoheterotroph', 'organotroph', 'photoautotroph', 'photoheterotroph', 'photolithoautotroph', 'photolithotroph', 'photosynthetic', 'phototroph']
+* Value syntax: ['', 'autotroph', 'carboxydotroph', 'chemoautotroph', 'chemoheterotroph', 'chemolithoautotroph', 'chemolithotroph', 'chemoorganoheterotroph', 'chemoorganotroph', 'chemosynthetic', 'chemotroph', 'copiotroph', 'diazotroph', 'facultative', 'heterotroph', 'lithoautotroph', 'lithoheterotroph', 'lithotroph', 'methanotroph', 'methylotroph', 'mixotroph', 'obligate', 'chemoautolithotroph', 'oligotroph', 'organoheterotroph', 'organotroph', 'photoautotroph', 'photoheterotroph', 'photolithoautotroph', 'photolithotroph', 'photosynthetic', 'phototroph', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 sample collection
 ~~~~~~~~~~~~~~~~~
@@ -486,7 +486,7 @@ sample collection
 * Definition: oxygenation status of sample
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'aerobic', 'anaerobic']
+* Value syntax: ['', 'aerobic', 'anaerobic', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **passage history** : ``passage_history``
 
@@ -599,8 +599,7 @@ sample collection
 * Definition: Type of dataset from which the UViG was obtained
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'metagenome (not viral targeted)', 'viral fraction metagenome (virome)', 'sequence-targeted metagenome', 'metatranscriptome (not viral targeted)', 'viral fraction RNA metagenome (RNA virome)', 'sequence-targeted RNA metagenome', 'microbial single amplified genome (SAG)', 'viral single amplified genome (vSAG)', 'isolate microbial genome', 'missing', 'not applicable', 'not collected']
-* Example: viral fraction metagenome (virome)
+* Value syntax: ['', 'metagenome (not viral targeted)', 'viral fraction metagenome (virome)', 'sequence-targeted metagenome', 'metatranscriptome (not viral targeted)', 'viral fraction RNA metagenome (RNA virome)', 'sequence-targeted RNA metagenome', 'microbial single amplified genome (SAG)', 'viral single amplified genome (vSAG)', 'isolate microbial genome', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **specimen voucher** : ``specimen_voucher``
 
@@ -628,14 +627,14 @@ sample collection
 * Definition: specification of urine collection method
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'clean catch', 'catheter']
+* Value syntax: ['', 'clean catch', 'catheter', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **virus enrichment approach** : ``virus_enrich_appr``
 
 * Definition: Approach used to enrich the sample for viruses, if any. If more than one approach was used, include multiple ‘virus_enrich_appr’ fields.
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'filtration', 'ultrafiltration', 'centrifugation', 'ultracentrifugation', 'PEG Precipitation', 'FeCl Precipitation', 'CsCl density gradient', 'DNAse', 'RNAse', 'targeted sequence capture', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'filtration', 'ultrafiltration', 'centrifugation', 'ultracentrifugation', 'PEG Precipitation', 'FeCl Precipitation', 'CsCl density gradient', 'DNAse', 'RNAse', 'targeted sequence capture', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 * Example: filtration + FeCl Precipitation + ultracentrifugation + DNAse
 
 host description
@@ -787,7 +786,7 @@ host description
 * Definition: physical sex of the host
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'restricted access', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'male', 'female', 'pooled male and female', 'neuter', 'hermaphrodite', 'intersex', 'not determined', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **host shape** : ``host_shape``
 
@@ -872,7 +871,7 @@ host details
 * Definition: dominant hand of the subject
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'left', 'right', 'ambidextrous']
+* Value syntax: ['', 'left', 'right', 'ambidextrous', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **douche** : ``douche``
 
@@ -1017,14 +1016,14 @@ host details
 * Definition: specification of smoking status
 * Field Format: text choice
 * Expected value: smoking status
-* Value syntax: [", 'ex-smoker', 'non-smoker', 'smoker']
+* Value syntax: ['', 'ex-smoker', 'non-smoker', 'smoker', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **special diet** : ``special_diet``
 
 * Definition: specification of special diet; can include multiple special diets
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'low carb', 'reduced calorie', 'vegetarian', 'other(to be specified)']
+* Value syntax: ['', 'low carb', 'reduced calorie', 'vegetarian', 'other(to be specified)', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **time since last toothbrushing** : ``time_last_toothbrush``
 
@@ -1412,7 +1411,7 @@ concentration measurement
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: %
+* Preferred unit: percentage
 
 **emulsions** : ``emulsions``
 
@@ -1818,8 +1817,7 @@ geography
 * Definition: cross-sectional position in the hillslope where sample was collected. sample area position in relation to surrounding areas
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope']
-
+* Value syntax: ['', 'summit', 'shoulder', 'backslope', 'footslope', 'toeslope', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **slope aspect** : ``slope_aspect``
 
@@ -1845,49 +1843,49 @@ internal environment
 * Definition: the primary function for which a building or discrete part of a building is intended to be used
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'airport', 'agricultural', 'commercial', 'educational', 'government', 'health care', 'high rise', 'industrial', 'low rise', 'market', 'office', 'military', 'parking', 'residential', 'restaurant', 'school', 'sports complex', 'storage', 'religious', 'transport', 'wood framed', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'airport', 'agricultural', 'commercial', 'educational', 'government', 'health care', 'high rise', 'industrial', 'low rise', 'market', 'office', 'military', 'parking', 'residential', 'restaurant', 'school', 'sports complex', 'storage', 'religious', 'transport', 'wood framed', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **building setting** : ``building_setting``
 
 * Definition: a location (geography) where a building is set
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'urban', 'suburban', 'exurban', 'rural', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'urban', 'suburban', 'exurban', 'rural', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **filter type** : ``filter_type``
 
 * Definition: a device which removes solid particulates or airborne molecular contaminants
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'particulate air filter', 'chemical air filter', 'low-MERV pleated media', 'HEPA filter', 'electrostatic air treatment', 'gas-phase air treatment', 'ultraviolet air treatment', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'particulate air filter', 'chemical air filter', 'low-MERV pleated media', 'HEPA filter', 'electrostatic air treatment', 'gas-phase air treatment', 'ultraviolet air treatment', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **heating and cooling system type** : ``heat_cool_type``
 
 * Definition: methods of conditioning or heating a room or building
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'radiant system', 'heat pump', 'forced air system', 'steam forced heat', 'wood stove', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'radiant system', 'heat pump', 'forced air system', 'steam forced heat', 'wood stove', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **indoor space** : ``indoor_space``
 
 * Definition: a distinguishable space within a structure, the purpose for which discrete areas of a building is used
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'bedroom', 'office', 'bathroom', 'foyer', 'kitchen', 'locker room', 'hallway', 'elevator', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'bedroom', 'office', 'bathroom', 'foyer', 'kitchen', 'locker room', 'hallway', 'elevator', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **indoor surface** : ``indoor_surf``
 
 * Definition: type of indoor surface
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'counter top', 'window', 'wall', 'cabinet', 'ceiling', 'door', 'shelving', 'vent cover']
+* Value syntax: ['', 'counter top', 'window', 'wall', 'cabinet', 'ceiling', 'door', 'shelving', 'vent cover', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **light type** : ``light_type``
 
 * Definition: application of light to achieve some practical or aesthetic effect. Lighting includes the use of both artificial light sources such as lamps and light fixtures, as well as natural illumination by capturing daylight. Can also include absence of light
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'natural light', 'electric light', 'no light', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'natural light', 'electric light', 'no light', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **occupancy at sampling** : ``occup_samp``
 
@@ -1908,28 +1906,28 @@ internal environment
 * Definition: customary or normal state of the space
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'typical occupied', 'typically unoccupied', 'missing', 'not applicable', 'not collected']
+* Value syntax: ['', 'typical occupied', 'typically unoccupied', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **substructure type** : ``substructure_type``
 
 * Definition: the substructure or under building is that largely hidden section of the building which is built off the foundations to the ground floor level
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'crawlspace', 'slab on grade', 'basement']
+* Value syntax: ['', 'crawlspace', 'slab on grade', 'basement', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **surface material** : ``surf_material``
 
 * Definition: surface materials at the point of sampling
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'concrete', 'wood', 'stone', 'tile', 'plastic', 'glass', 'vinyl', 'metal', 'carpet', 'stainless steel', 'paint', 'cinder blocks', 'hay bales', 'stucco', 'adobe']
+* Value syntax: ['', 'concrete', 'wood', 'stone', 'tile', 'plastic', 'glass', 'vinyl', 'metal', 'carpet', 'stainless steel', 'pint', 'cinder blocks', 'hay bales', 'stucco', 'adobe', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **surface-air contaminant** : ``surf_air_cont``
 
 * Definition: contaminant identified on surface
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'dust', 'organic matter', 'particulate matter', 'volatile organic compounds', 'biological contaminants', 'radon', 'nutrients', 'biocides']
+* Value syntax: ['', 'dust', 'organic matter', 'particulate matter', 'volatile organic compounds', 'biological contaminants', 'radon', 'nutrients', 'biocides', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **typical occupant density** : ``typ_occupant_dens``
 
@@ -2056,7 +2054,7 @@ local environment conditions
 * Definition: present state of sample site
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'cities', 'farmstead', 'industrial areas', 'roads/railroads', 'rock', 'sand', 'gravel', 'mudflats', 'salt flats', 'badlands', 'permanent snow or ice', 'saline seeps', 'mines/quarries', 'oil waste areas', 'small grains', 'row crops', 'vegetable crops', 'horticultural plants (e.g. tulips)', 'marshlands (grass,sedges,rushes)', 'tundra (mosses,lichens)', 'rangeland', 'pastureland (grasslands used for livestock grazing)', 'hayland', 'meadows (grasses,alfalfa,fescue,bromegrass,timothy)', 'shrub land (e.g. mesquite,sage-brush,creosote bush,shrub oak,eucalyptus)', 'successional shrub land (tree saplings,hazels,sumacs,chokecherry,shrub dogwoods,blackberries)', 'shrub crops (blueberries,nursery ornamentals,filberts)', 'vine crops (grapes)', 'conifers (e.g. pine,spruce,fir,cypress)', 'hardwoods (e.g. oak,hickory,elm,aspen)', 'intermixed hardwood and conifers', 'tropical (e.g. mangrove,palms)', 'rainforest (evergreen forest receiving >406 cm annual rainfall)', 'swamp (permanent or semi-permanent water body dominated by woody plants)', 'crop trees (nuts,fruit,christmas trees,nursery trees)']
+* Value syntax: ['', 'cities', 'farmstead', 'industrial areas', 'roads/railroads', 'rock', 'sand', 'gravel', 'mudflats', 'salt flats', 'badlands', 'permanent snow or ice', 'saline seeps', 'mines/quarries', 'oil waste areas', 'small grains', 'row crops', 'vegetable crops', 'horticultural plants (e.g. tulips)', 'marshlands (grass,sedges,rushes)', 'tundra (mosses,lichens)', 'rangeland', 'pastureland (grasslands used for livestock grazing)', 'hayland', 'meadows (grasses,alfalfa,fescue,bromegrass,timothy)', 'shrub land (e.g. mesquite,sage-brush,creosote bush,shrub oak,eucalyptus)', 'successional shrub land (tree saplings,hazels,sumacs,chokecherry,shrub dogwoods,blackberries)', 'shrub crops (blueberries,nursery ornamentals,filberts)', 'vine crops (grapes)', 'conifers (e.g. pine,spruce,fir,cypress)', 'hardwoods (e.g. oak,hickory,elm,aspen)', 'intermixed hardwood and conifers', 'tropical (e.g. mangrove,palms)', 'rainforest (evergreen forest receiving >406 cm annual rainfall)', 'swamp (permanent or semi-permanent water body dominated by woody plants)', 'crop trees (nuts,fruit,christmas trees,nursery trees)', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **current vegetation** : ``cur_vegetation``
 
@@ -2078,7 +2076,7 @@ local environment conditions
 * Field Format: restricted text
 * Expected value: measurement value
 * Value syntax: {float} {unit}
-* Preferred unit: ºC
+* Preferred unit: degree Celsius
 
 
 **downward PAR** : ``down_par``
@@ -2094,7 +2092,7 @@ local environment conditions
 * Definition: drainage classification from a standard system such as the USDA system
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'very poorly', 'poorly', 'somewhat poorly', 'moderately well', 'well', 'excessively drained']
+* Value syntax: ['', 'very poorly', 'poorly', 'somewhat poorly', 'moderately well', 'well', 'excessively drained', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **FAO classification** : ``fao_class``
 
@@ -2124,7 +2122,7 @@ local environment conditions
 * Definition: specific layer in the land area which measures parallel to the soil surface and possesses physical characteristics which differ from the layers above and beneath
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'O horizon', 'A horizon', 'E horizon', 'B horizon', 'C horizon', 'R layer', 'Permafrost']
+* Value syntax: ['', 'O horizon', 'A horizon', 'E horizon', 'B horizon', 'C horizon', 'R layer', 'Permafrost', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **horizon method** : ``horizon_meth``
 
@@ -2268,7 +2266,7 @@ local environment conditions
 * Definition: information about the sediment type based on major constituents
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'biogenous', 'cosmogenous', 'hydrogenous', 'lithogenous']
+* Value syntax: ['', 'biogenous', 'cosmogenous', 'hydrogenous', 'lithogenous', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **sewage type** : ``sewage_type``
 
@@ -2358,7 +2356,7 @@ local environment conditions
 * Definition: stage of tide
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'low', 'high']
+* Value syntax: ['', 'low', 'high', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **total depth of water column** : ``tot_depth_water_col``
 
@@ -2477,8 +2475,7 @@ local environment conditions imposed
 * Definition: information about growth media for growing the plants or tissue cultured samples
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: [",'soil','liquid']
-* Example: soil;liquid
+* Value syntax: ['','soil', 'liquid', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 **herbicide regimen** : ``herbicide_regm``
 
@@ -2653,7 +2650,7 @@ local environment history
 * Definition: note method(s) used for tilling
 * Field Format: text choice
 * Expected value: enumeration
-* Value syntax: ['', 'drill', 'cutting disc', 'ridge till', 'strip tillage', 'zonal tillage', 'chisel', 'tined', 'mouldboard', 'disc plough']
+* Value syntax: ['', 'drill', 'cutting disc', 'ridge till', 'strip tillage', 'zonal tillage', 'chisel', 'tined', 'mouldboard', 'disc plough', 'not applicable', 'not collected', 'not provided', 'restricted access', 'missing']
 
 unusual properties
 ~~~~~~~~~~~~~~~~~~
@@ -2717,3 +2714,24 @@ other
 * Field Format: free text
 * Expected value: parameter name;measurement value
 * Value syntax: {text};{float} {unit}
+
+
+Standardised missing value vocabulary
+-------------------------------------
+
+not applicable
+  information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately
+
+not collected
+  information of an expected format was not given because it has not been collected
+
+not provided
+  information of an expected format was not given, a value may be given at the later stage
+
+restricted access
+  information exists but can not be released openly because of privacy concerns
+
+missing
+  If you don't want to distinguish 'not collected', 'not provided' and 'restricted access'
+
+Reference: https://press3.mcs.anl.gov/gensc/uncategorized/reporting-missing-values/
