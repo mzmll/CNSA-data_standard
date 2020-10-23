@@ -2757,6 +2757,7 @@ Sample types
    Use for any invertebrate sample.
 - Human sample
    Only use for human samples or cell lines that have no privacy concerns. For all studies involving human subjects, it is the submitter's responsibility to ensure that the information supplied protects participant privacy in accordance with all applicable laws, regulations and institutional policies. Make sure to remove any direct personal identifiers from your submission.
+
    For samples isolated from humans use the Pathogen, Microbe or appropriate MIxS package.
 - Plant sample
    Use for any plant sample or cell line.
@@ -2786,3 +2787,31 @@ Sample types
 
 Sample validation
 -----------------
+
+Typical validations include:
+- Content must be supplied for mandatory fields. If information is unavailable for any mandatory field, please enter 'not applicable', 'not collected',  'not provided', 'restricted access' or 'missing' as appropriate, except for specific formats, please see field description for details.
+- Multiple Samples cannot have identical attributes. You should have one Sample for each specimen, and each of your Samples must have differentiating information (excluding sample name, sample title, and description). This check was implemented to encourage submitters to include distinguishing information in their samples. If it is necessary to represent true biological replicates as separate Samples, you might add an 'aliquot' or 'replicate' attribute, e.g., 'replicate = biological replicate 1', as appropriate. Note that multiple assay types, e.g., RNA-seq and ChIP-seq data may reference the same Sample if appropriate.
+- The values provided for some attributes are validated, for example, 'collection date' and 'geographic location' values must be provided in a recognized format. Refer to the attribute definition for information about required formats.
+
+Organism validation rule
+
+- Pathogen affecting public health: must have lineage Bacteria_, Viruses_ or Fungi_, to species-level
+- Microbial sample: must have lineage Bacteria_, Archaea_, Viruses_, Viroids or Fungi_; or for unicellular eukaryotes, must not have lineage Metazoa_, Embryophyta_, `unclassified sequences`_ or `other sequences`_
+- Model organism or animal sample: must NOT be Homo sapiens or have lineage Bacteria_, Archaea_, Viruses_ or Fungi_
+- Metagenome or environmental sample: must be a metagenome, where lineage starts with unclassified sequences and scientific name ends with 'metagenome'
+- Invertebrate sample: no check
+- Human sample: must be Homo sapiens
+- Plant sample: must have lineage Viridiplantae_, or be known to have plastids
+- Virus sample: must have lineage Viruses_
+- GSC MIxS environmental sample: no check
+- Beta-lactamase: must have lineage Bacteria_
+
+.. _Bacteria：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2
+.. _Archaea：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157
+.. _Viruses：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239
+.. _Fungi：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=4751
+.. _Metazoa：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=33208
+.. _Embryophyta：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=3193
+.. _unclassified sequences：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908
+.. _other sequences：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=28384
+.. _Viridiplantae：https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=33090
