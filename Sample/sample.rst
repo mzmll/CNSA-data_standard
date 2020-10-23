@@ -2781,6 +2781,7 @@ Sample types
   - GSC MIxS wastewater sludge
   - GSC MIxS water
 - Other
+
   - Beta-lactamase
      Use for beta-lactamase gene transformants that have antibiotic resistance data.
 
@@ -2789,6 +2790,7 @@ Sample validation
 -----------------
 
 Typical validations include:
+
 - Content must be supplied for mandatory fields. If information is unavailable for any mandatory field, please enter 'not applicable', 'not collected',  'not provided', 'restricted access' or 'missing' as appropriate, except for specific formats, please see field description for details.
 - Multiple Samples cannot have identical attributes. You should have one Sample for each specimen, and each of your Samples must have differentiating information (excluding sample name, sample title, and description). This check was implemented to encourage submitters to include distinguishing information in their samples. If it is necessary to represent true biological replicates as separate Samples, you might add an 'aliquot' or 'replicate' attribute, e.g., 'replicate = biological replicate 1', as appropriate. Note that multiple assay types, e.g., RNA-seq and ChIP-seq data may reference the same Sample if appropriate.
 - The values provided for some attributes are validated, for example, 'collection date' and 'geographic location' values must be provided in a recognized format. Refer to the attribute definition for information about required formats.
