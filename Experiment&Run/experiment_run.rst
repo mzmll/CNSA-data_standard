@@ -2,8 +2,8 @@ Experiment & Run
 =================
 A description of sample-specific sequencing library, instrument and sequencing methods. An experiment references 1 project and 1 sample. Runs describe the files that belong to the previously created experiments.
 
-Field
------
+Genernal Information
+---------------------
 
 **\*project accession** : ``project_accession``
 
@@ -16,6 +16,9 @@ Field
 **\*experiment title** : ``experiment_title``
 
 * Definition: Short description that will identify the dataset on public pages. A clear and concise formula for the title would be like: {methodology} of {organism}: {sample info}, e.g. RNA-Seq of mus musculus: adult female spleen.
+
+Library Information & Sequencing
+--------------------------------
 
 **\*library name** : ``library_name``
 
@@ -240,6 +243,9 @@ Field
 
 * Definition: The average insert size for paired reads.
 
+Run Information
+---------------
+
 **\*file type**: ``file_type``
 
 * Value:
@@ -254,6 +260,9 @@ Field
 **\*file name**: ``file_name``
 
 **\*file md5**: ``file_md5``
+
+Reference Information
+---------------------
 
 **reference accession**: ``reference_accession``
 

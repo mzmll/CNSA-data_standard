@@ -2740,8 +2740,6 @@ Reference: https://press3.mcs.anl.gov/gensc/uncategorized/reporting-missing-valu
 CNSA sample checklist
 ---------------------
 
-Sample types
-
 - Pathogen affecting public health
    Use for pathogen samples that are relevant to public health.
   - Clinical or host-associated pathogen
