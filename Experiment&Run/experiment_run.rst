@@ -264,6 +264,10 @@ Run Information
 Reference Information
 ---------------------
 
+When submitting **BAM** files of aligned reads, you must also specify an assembly - the reference genome that your reads were aligned against. You can identify your reference assembly by its accession from the NCBI, UCSC and Ensembl. If the assembly is not available from a public repository, you will need to submit your own (local) assembly in FASTA format along with your BAM file.
+
+When submitting **CRAM** files, the references should be provided in the same manner as BAM references.
+
 **reference accession**: ``reference_accession``
 
 * Definition: This is only if you are submitting a bam/cram file aligned against an assembly - the reference genome in the public repository. Please provide the accession number (e.g. GRCh37) in the public repository.
