@@ -3,29 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CNSA's documentation!
+CNSA: Data Standards
 ================================
 
-This documentation is about data standards for CNSA.
+Welcome to the data standards for CNGB Sequence Archive(CNSA).
 
 .. toctree::
-   :caption: Project
+   :caption: Data Modules
    :maxdepth: 1
 
    Project/project
-
-.. toctree::
-   :caption: Sample
-   :maxdepth: 1
-
    Sample/sample
-
-.. toctree::
-   :caption: Experiment&Run
-   :maxdepth: 1
-
-
    Experiment&Run/experiment_run
+
+
+
+
+
 
 
 Indices and tables
